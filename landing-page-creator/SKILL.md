@@ -1,6 +1,6 @@
 ---
 name: landing-page-creator
-description: Create or redesign premium landing pages, homepages, hero sections, B2C pages, agency pages, SaaS/product pages, and visually ambitious marketing websites with strict sellable-demo gates. Use for requests mentioning Awwwards-level design, 21st.dev-style components, cinematic hero, insane UI, premium frontend, ImageGen visuals, non-generic landing page, Hero Gate, Anti-AI Gate, scroll story, or conversion-focused redesign.
+description: Create or redesign premium landing pages, homepages, hero sections, B2C pages, agency pages, SaaS/product pages, and visually ambitious marketing websites with strict sellable-demo gates, hero-first iteration, ImageGen asset escalation, 21st.dev-style scouting, GSAP/Three.js-grade motion when useful, and Awwwards-level art direction. Use for requests mentioning Awwwards-level design, 21st.dev-style components, cinematic hero, insane UI, premium frontend, ImageGen visuals, non-generic landing page, Hero Gate, Anti-AI Gate, scroll story, or conversion-focused redesign.
 ---
 
 # Landing Page Creator
@@ -22,11 +22,12 @@ Always follow this order:
 3. Choose one strong visual metaphor.
 4. Invent or scout component patterns.
 5. Generate or request ImageGen visuals when useful.
-6. Design the hero as the strongest part of the page.
-7. Pass the mandatory gates before building the full page.
-8. Implement the selected direction.
-9. Preview and polish.
-10. Review against the mandatory gates and anti-slop checklist.
+6. Design and build the hero first.
+7. Preview the hero on desktop and mobile.
+8. Pass the mandatory gates before building the full page.
+9. Implement the selected direction.
+10. Preview and polish.
+11. Review against the mandatory gates and anti-slop checklist.
 
 If the user explicitly asks to code immediately, still do a very short creative direction pass first unless the task is a small targeted edit.
 
@@ -63,6 +64,12 @@ Avoid:
 
 Treat these gates as hard blockers. If any gate fails, stop expanding the page and revise the concept, hero, component, copy, or interaction until it passes.
 
+### Hero-First Build Gate
+
+Build the hero before the rest of the page. Do not fill out generic sections to compensate for a weak first viewport.
+
+Pass only after desktop and mobile hero preview. If the hero does not look client-ready, rebuild the hero before continuing.
+
 ### Hero Gate
 
 The hero must make the client feel they are seeing a custom, high-value demo.
@@ -76,6 +83,16 @@ Pass only if:
 - the above-the-fold experience would still feel premium with the rest of the page hidden
 
 Fail if it is only headline, subheadline, gradient, floating cards, fake metrics, and CTA.
+
+### Visual Ambition Gate
+
+Choose an execution tier before coding:
+
+- **Premium static**: strong composition, real assets, refined typography.
+- **Cinematic interactive**: layered scene, cursor/scroll response, custom transitions.
+- **Awwwards-grade**: sticky scroll story, GSAP/ScrollTrigger or equivalent, WebGL/Three.js/Spline/Rive/canvas if the concept needs depth, physics, object motion, or product presence.
+
+If the user asks for a stunning, insane, Awwwards-level, or client-sellable page, default to Cinematic interactive or Awwwards-grade.
 
 ### Anti-AI Gate
 
@@ -105,17 +122,37 @@ Do not build a stack of generic sections. Build a scroll story.
 
 Pass only if scrolling changes the scene or argument in a meaningful way: broken to fixed, unknown to diagnosed, risk to trust, scattered to organized, before to after, hidden system to visible proof, or problem to outcome. At least one section must have a scroll-linked, sticky, progressive, reveal, compare, timeline, or transformation mechanic.
 
+### Motion Library Gate
+
+Use serious motion tools when they materially improve the result. If the chosen concept depends on scroll choreography, use GSAP ScrollTrigger, Framer Motion/Motion, CSS scroll timelines, or the project’s existing motion stack. If it depends on a spatial product, device, map, particle field, or 3D scene, use Three.js/WebGL/Spline/Rive/canvas or a high-quality CSS 3D simulation.
+
+Do not add heavy libraries for decorative motion. Do add them when they create the signature selling moment. Respect reduced-motion settings.
+
 ### Signature Component Gate
 
 Invent at least one custom component that could be shown in a sales call.
 
 It must combine a client-specific metaphor, content function, interaction mechanic, and conversion purpose. Examples: device x-ray, repair timeline, before/after slider, trust beam, service orbit, diagnostic scanner, quote builder, guarantee rail, process tunnel, proof constellation.
 
+### Asset Escalation Gate
+
+Do not accept weak homemade visuals. If the hero needs a product, object, place, person, cinematic background, texture, or premium metaphor asset, use ImageGen, real client assets, high-quality photography, WebGL/canvas, or a polished CSS/SVG system.
+
+Avoid rough hand-drawn SVGs, distorted device mockups, fake app screenshots, messy illustration, or random abstract shapes. SVG is acceptable only when it is clean, deliberate, and production-grade.
+
+### 21st.dev Scouting Gate
+
+Before implementing an ambitious page, scout or invent at least 2-3 premium interaction patterns inspired by 21st.dev, Magic UI, Codrops, Awwwards, Figma community, or similar sources when network access is available. Use them as raw material, not copied templates.
+
 ### Sellable Demo Gate
 
 Before final delivery, ask: “Could I show this demo to the client without apologizing for the hero, generic sections, weak mobile, or missing business specificity?”
 
 Pass only if the answer is yes after desktop and mobile preview. If not, iterate on the weakest gate first, usually the hero.
+
+### Screenshot Critic Gate
+
+After preview, judge the hero screenshot as an art director. If the first viewport does not feel surprising, specific, polished, and worth paying for, revise only the hero and signature scene before touching lower sections.
 
 ## Phase 1 — Business Reading
 
@@ -214,50 +251,8 @@ If it only looks cool but says nothing, remove it.
 
 Use 21st.dev/Magic UI-style components as raw material, not templates.
 
-Scout or invent component families such as:
-
-- Aurora Background
-- Background Paths
-- Lamp
-- Border Beam
-- Display Cards
-- Container Scroll Animation
-- Blur Fade
-- Tubelight Navbar
-- Hero Video Dialog
-- Animated Beam
-- Bento Reveal
-- Scroll Progress Story
-- Magnetic CTA
-- Marquee Proof Strip
-- Interactive Process Timeline
-- Before/After Slider
-- Spotlight Card
-- Gooey Text Morph
-- Morphing Tabs
-- Floating Dock
-- Parallax Product Stack
-- Liquid Cursor Field
-- X-Ray Hover Reveal
-- Device Exploded View
-- Scroll-Synced Story Panels
-- Sticky Conversion Narrative
-- Cinematic Light Sweep
-- Interactive Problem Map
-- Proof Constellation
-- Floating Service Capsules
-- Dynamic CTA Path
-- 3D Tilt Product Cards
-- Premium Testimonial Wall
-- Animated Trust Seal
-- Cursor-Reactive Hero Surface
-- Masked Image Reveal
-- Scroll-Driven Device Assembly
-- Morphing Service Cards
-- Tactile Pricing Switcher
-- Kinetic FAQ Accordion
-- Cinematic Quote Stage
-- Storyline Progress Rail
+Read `references/component-bank.md` when choosing component patterns.
+Read `references/high-impact-design-patterns.md` for Awwwards-grade hero, motion, ImageGen, GSAP, Three.js, and scroll-story ideas.
 
 Rules:
 
@@ -285,30 +280,7 @@ It must include:
 
 The visitor must understand the promise in less than 3 seconds.
 
-Hero patterns to consider:
-
-- Cinematic product reveal
-- Interactive before/after
-- Mission control interface
-- Scroll-driven transformation
-- X-ray service reveal
-- Layered system map
-- Floating operational ecosystem
-- Premium editorial split
-- Device exploded view
-- Light tunnel into CTA
-- Real-time service orbit
-- Glass architecture panel
-- Problem-to-solution morph
-- Cursor-reactive hero
-- Animated trust path
-- 3D-like depth using frontend-only layers
-- Swipe-to-reveal hero
-- Repair lens magnifier
-- Timeline tunnel
-- Product in orbit
-- Neon diagnostic lab
-- Calm command console
+Read `references/hero-patterns.md` before selecting the final hero pattern.
 
 ## Phase 7 — ImageGen Direction
 
@@ -328,6 +300,8 @@ Use image generation when the page needs:
 If an image generation tool is available, invoke it explicitly when useful. If `$imagegen` is available, use `$imagegen`. If not available, produce precise image prompts and tell the user where to place the generated assets.
 
 Before generating, create 3 image prompt options.
+
+If the hero would otherwise rely on a weak fake SVG, generic cards, fake dashboards, or abstract gradients, escalate to ImageGen or a better visual system.
 
 Each ImageGen prompt must define:
 
@@ -425,6 +399,8 @@ Prefer:
 - mobile-first polish
 - browser preview verification
 
+For ambitious scroll or 3D concepts, justify the motion stack explicitly. Use GSAP/ScrollTrigger, Three.js/WebGL, Framer Motion/Motion, canvas, Spline, or Rive when the concept needs them and the project can support them.
+
 When working in React, Nuxt, Vue, or plain HTML/CSS, adapt the implementation to the existing structure. Do not force a new stack.
 
 ## Phase 11 — Browser Polish Loop
@@ -435,7 +411,7 @@ After implementation:
 2. Open the page in a desktop-sized viewport.
 3. Inspect the hero first.
 4. Inspect mobile.
-5. Run the Hero, Anti-AI, Client-Specific, Scroll Story, Signature Component, and Sellable Demo gates.
+5. Run the Hero-First, Hero, Visual Ambition, Anti-AI, Client-Specific, Scroll Story, Motion Library, Signature Component, Asset Escalation, 21st.dev, Sellable Demo, and Screenshot Critic gates.
 6. Fix spacing, typography, contrast, overflow, motion issues, and weak states.
 7. Remove anything that looks generic.
 8. Repeat once if the first preview is not strong.
@@ -481,11 +457,13 @@ Do this:
 2. Read the existing website if a URL is provided and browser/network access is available.
 3. Produce 5 creative directions.
 4. Pick the strongest one.
-5. Define the hero, signature component, and scroll story before coding.
-6. Check the gates on the concept and revise if needed.
-7. Generate ImageGen prompts if visual assets would improve the result.
-8. Invoke image generation if available, or output the prompts if not.
-9. Implement the selected direction.
-10. Preview the page.
-11. Improve any gate failure, starting with the hero.
-12. Summarize what changed and how to review it.
+5. Read relevant references for hero, components, ImageGen, and high-impact design.
+6. Define the hero, signature scene, motion stack, and scroll story before coding.
+7. Build and preview the hero first.
+8. Check the gates on the hero and revise if needed.
+9. Generate ImageGen prompts if visual assets would improve the result.
+10. Invoke image generation if available, or output the prompts if not.
+11. Implement the selected direction.
+12. Preview the full page.
+13. Improve any gate failure, starting with the hero.
+14. Summarize what changed and how to review it.

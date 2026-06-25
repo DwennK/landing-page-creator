@@ -1,7 +1,7 @@
 interface:
   display_name: "Landing Page Creator"
-  short_description: "Sellable landing demos with Hero, Anti-AI, client-specific, scroll-story, and signature-component gates."
+  short_description: "Hero-first sellable demos with ImageGen escalation, 21st.dev-style scouting, and GSAP/Three-grade motion gates."
   brand_color: "#7C3AED"
-  default_prompt: "$landing-page-creator create a sellable premium landing page with a Hero Gate, Anti-AI Gate, client-specific art direction, signature component, scroll story, and desktop/mobile preview iteration."
+  default_prompt: "$landing-page-creator create an extraordinary sellable landing page: build the hero first, use ImageGen if assets are needed, scout 21st.dev-style patterns, use GSAP/Three.js-grade motion when it improves the concept, and iterate desktop/mobile until the gates pass."
 policy:
   allow_implicit_invocation: true
