@@ -13,6 +13,8 @@ The goal is not a clean template. The goal is a custom, cinematic, brand-specifi
 
 No Compromise Mode is the default for every landing page creation or redesign task. Do not wait for the user to ask for “insane” or “Awwwards-level”; assume the first version must be surprising, premium, and directly sellable.
 
+For top-tier full builds, use Creative Production Mode: read `references/creative-production-mode.md` and work in passes instead of building the whole page in one shot.
+
 ## Non-Negotiable Rule
 
 Do not start by coding.
@@ -266,6 +268,7 @@ Use 21st.dev/Magic UI-style components as raw material, not templates.
 
 Read `references/component-bank.md` when choosing component patterns.
 Read `references/high-impact-design-patterns.md` for Awwwards-grade hero, motion, ImageGen, GSAP, Three.js, and scroll-story ideas.
+Read `references/creative-production-mode.md` for full-site concept, section storyboard, asset plan, motion prototype, and QA workflow.
 
 Rules:
 
@@ -471,8 +474,8 @@ Do this:
 2. Read the existing website if a URL is provided and browser/network access is available.
 3. Produce 5 creative directions.
 4. Pick the strongest one.
-5. Read relevant references for hero, components, ImageGen, and high-impact design.
-6. Define the one big trick, signature scene, motion stack, hero budget, and scroll story before coding.
+5. Read relevant references for hero, components, ImageGen, high-impact design, and creative production.
+6. Define the one big trick, section storyboard, asset plan, signature scene, motion stack, hero budget, and scroll story before coding.
 7. Do a short reference hunt if browsing is available.
 8. Build and preview the hero first.
 9. Check the gates on the hero and revise if needed.
