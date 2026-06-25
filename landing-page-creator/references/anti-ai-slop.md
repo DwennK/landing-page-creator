@@ -17,6 +17,30 @@ Delete or rewrite anything that looks like generic AI output.
 - too many shadows
 - low-contrast gray text everywhere
 - fake metrics like “10x faster” without context
+- giant empty dark panels
+- floating process cards connected by decorative beams
+- abstract circles behind cards with no useful meaning
+- trust/process diagrams that could fit any business
+- oversized containers where less than half the area communicates anything
+- “premium” glass cards used as decoration instead of proof
+
+## Fake Premium Component Kill List
+
+Delete or rebuild a component when it matches this pattern:
+
+- a large bordered panel with lots of empty space
+- 2-4 floating cards labeled with generic steps
+- thin decorative line, beam, orbit, or circle
+- no real product, asset, data, proof, comparison, interaction, or business-specific detail
+
+Replace it with one of these:
+
+- real before/after comparison
+- scroll-controlled product transformation
+- real service timeline with time, price, warranty, and proof
+- client-specific map, device, object, case, quote, review, or diagnostic result
+- interactive calculator, quote builder, diagnostic lens, x-ray, or exploded view
+- compact proof block if there is not enough content for a full scene
 
 ## Copy Clichés to Avoid
 

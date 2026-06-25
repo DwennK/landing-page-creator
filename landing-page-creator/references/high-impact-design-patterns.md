@@ -64,6 +64,27 @@ If the first viewport could belong to another company, rebuild it.
 - **Before/After Lens**: a draggable or cursor-reactive lens reveals the improved state.
 - **Trust Beam**: animated paths connect certifications, reviews, guarantees, and CTA into one proof system.
 
+## Component Reality
+
+A premium component is not premium because it is dark, glassy, large, or animated. It is premium when it shows something useful in a memorable way.
+
+Fail patterns:
+
+- large empty frame with small cards
+- generic diagnostic/repair/guarantee boxes
+- decorative beams or circles that do not encode real proof
+- repeated cards where a compact list would be clearer
+- big “process” scene without product, price, duration, warranty, review, map, or before/after evidence
+
+Upgrade patterns:
+
+- show the actual object changing state
+- expose the diagnostic logic visually
+- connect proof points to a CTA
+- compare before/after with a drag, scroll, or lens interaction
+- turn service steps into a time/price/warranty decision tool
+- use real customer concerns as the structure: “Combien ? Combien de temps ? Est-ce garanti ?”
+
 ## Scroll Choreography
 
 Plan 3 to 5 beats before coding:

@@ -53,6 +53,8 @@ Avoid:
 - generic SaaS dashboard heroes
 - random gradient blobs
 - vague floating cards
+- decorative beam-and-card diagrams
+- large empty panels pretending to be premium UI
 - meaningless fake metrics
 - cheap glassmorphism
 - over-rounded cards
@@ -133,6 +135,12 @@ Fail immediately on this pattern:
 
 Replace it with a client-specific scene, signature component, proof moment, and scroll/hover mechanic.
 
+### Component Reality Gate
+
+Every visible component must earn its space. Fail any section that is mostly an empty dark/glass panel, floating cards, abstract circles, beams, fake diagrams, or vague process boxes without a concrete client-specific visual, useful data, or meaningful interaction.
+
+If a component cannot be explained as “this helps the buyer decide by showing [specific proof/process/outcome],” delete it or rebuild it around real content, real assets, or a stronger interaction.
+
 ### Client-Specific Gate
 
 The page must feel impossible to reuse for a random business.
@@ -179,6 +187,10 @@ Pass only if the answer is yes after desktop and mobile preview. If not, iterate
 
 After preview, judge the hero screenshot as an art director. If the first viewport does not feel surprising, specific, polished, and worth paying for, revise only the hero and signature scene before touching lower sections.
 
+### Section Screenshot Gate
+
+Capture or inspect each major section, not only the hero. Any section that looks sparse, unfinished, generic, low-effort, misaligned, oversized, or hard to sell must be rewritten before delivery.
+
 ## Phase 1 — Business Reading
 
 Identify:
@@ -218,31 +230,7 @@ Do not choose the safest direction by default. Choose the one with the best bala
 
 ## Phase 3 — Visual Metaphor
 
-Every premium landing must be built around one clear metaphor.
-
-Examples:
-
-- Mission Control
-- Repair Lab
-- Living Blueprint
-- Glass Operating System
-- Floating Product Universe
-- Cinematic Before/After
-- Interactive Swiss Map
-- Object Exploded View
-- Data Constellation
-- Service Command Center
-- Timeline Tunnel
-- Premium Concierge Desk
-- Liquid Metal Interface
-- Device X-Ray
-- Trust Architecture
-- Magnetic Field of Benefits
-- Precision Workshop
-- Signal Tower
-- Transparent Ledger
-- Calm Control Room
-- Guided Path
+Every premium landing must be built around one clear metaphor. Read `references/high-impact-design-patterns.md` for examples.
 
 The metaphor must guide:
 
@@ -436,7 +424,7 @@ After implementation:
 2. Open the page in a desktop-sized viewport.
 3. Inspect the hero first.
 4. Inspect mobile.
-5. Run the Hero-First, Hero, Visual Ambition, Anti-AI, Client-Specific, Scroll Story, Motion Library, Signature Component, Asset Escalation, 21st.dev, Sellable Demo, and Screenshot Critic gates.
+5. Run the Hero-First, Hero, Visual Ambition, Anti-AI, Client-Specific, Scroll Story, Motion Library, Signature Component, Component Reality, Asset Escalation, 21st.dev, Sellable Demo, Screenshot Critic, and Section Screenshot gates.
 6. Fix spacing, typography, contrast, overflow, motion issues, and weak states.
 7. Remove anything that looks generic.
 8. Repeat once if the first preview is not strong.
@@ -451,6 +439,7 @@ The page fails if:
 - the visual metaphor is unclear
 - the layout looks like a template
 - the page is just stacked sections
+- a section is an empty decorative panel with floating boxes
 - the animations are decorative but pointless
 - the copy is generic
 - the mobile version feels secondary
