@@ -1,6 +1,6 @@
 ---
 name: landing-page-creator
-description: Create or redesign premium landing pages, homepages, hero sections, B2C pages, agency pages, SaaS/product pages, and visually ambitious marketing websites. Use for requests mentioning Awwwards-level design, 21st.dev-style components, cinematic hero, insane UI, premium frontend, ImageGen visuals, non-generic landing page, or conversion-focused redesign.
+description: Create or redesign premium landing pages, homepages, hero sections, B2C pages, agency pages, SaaS/product pages, and visually ambitious marketing websites with strict sellable-demo gates. Use for requests mentioning Awwwards-level design, 21st.dev-style components, cinematic hero, insane UI, premium frontend, ImageGen visuals, non-generic landing page, Hero Gate, Anti-AI Gate, scroll story, or conversion-focused redesign.
 ---
 
 # Landing Page Creator
@@ -23,9 +23,10 @@ Always follow this order:
 4. Invent or scout component patterns.
 5. Generate or request ImageGen visuals when useful.
 6. Design the hero as the strongest part of the page.
-7. Implement the selected direction.
-8. Preview and polish.
-9. Review against the anti-slop checklist.
+7. Pass the mandatory gates before building the full page.
+8. Implement the selected direction.
+9. Preview and polish.
+10. Review against the mandatory gates and anti-slop checklist.
 
 If the user explicitly asks to code immediately, still do a very short creative direction pass first unless the task is a small targeted edit.
 
@@ -57,6 +58,64 @@ Avoid:
 - AI-looking bento grids
 - decorative animation with no purpose
 - generic headlines like “Transform your business”
+
+## Mandatory Gates
+
+Treat these gates as hard blockers. If any gate fails, stop expanding the page and revise the concept, hero, component, copy, or interaction until it passes.
+
+### Hero Gate
+
+The hero must make the client feel they are seeing a custom, high-value demo.
+
+Pass only if:
+
+- the hero is the most impressive part of the page
+- the first viewport contains a custom visual scene, not a centered text block
+- the scene connects directly to the client’s business, product, service, or proof
+- the primary CTA is visible, specific, and commercially useful
+- the above-the-fold experience would still feel premium with the rest of the page hidden
+
+Fail if it is only headline, subheadline, gradient, floating cards, fake metrics, and CTA.
+
+### Anti-AI Gate
+
+Reject anything that looks like a generic AI landing page.
+
+Fail immediately on this pattern:
+
+- centered hero
+- blurred gradient background
+- three floating cards
+- features section
+- process section
+- testimonials section
+- final CTA
+
+Replace it with a client-specific scene, signature component, proof moment, and scroll/hover mechanic.
+
+### Client-Specific Gate
+
+The page must feel impossible to reuse for a random business.
+
+Pass only if the hero, metaphor, copy, imagery, components, icons, proof, and CTA all name or imply the real client’s offer, market, and buyer anxiety. For a repair shop, show repair, diagnosis, devices, warranty, speed, trust, and local service. For another market, create equivalent domain-specific proof.
+
+### Scroll Story Gate
+
+Do not build a stack of generic sections. Build a scroll story.
+
+Pass only if scrolling changes the scene or argument in a meaningful way: broken to fixed, unknown to diagnosed, risk to trust, scattered to organized, before to after, hidden system to visible proof, or problem to outcome. At least one section must have a scroll-linked, sticky, progressive, reveal, compare, timeline, or transformation mechanic.
+
+### Signature Component Gate
+
+Invent at least one custom component that could be shown in a sales call.
+
+It must combine a client-specific metaphor, content function, interaction mechanic, and conversion purpose. Examples: device x-ray, repair timeline, before/after slider, trust beam, service orbit, diagnostic scanner, quote builder, guarantee rail, process tunnel, proof constellation.
+
+### Sellable Demo Gate
+
+Before final delivery, ask: “Could I show this demo to the client without apologizing for the hero, generic sections, weak mobile, or missing business specificity?”
+
+Pass only if the answer is yes after desktop and mobile preview. If not, iterate on the weakest gate first, usually the hero.
 
 ## Phase 1 — Business Reading
 
@@ -376,9 +435,10 @@ After implementation:
 2. Open the page in a desktop-sized viewport.
 3. Inspect the hero first.
 4. Inspect mobile.
-5. Fix spacing, typography, contrast, overflow, motion issues, and weak states.
-6. Remove anything that looks generic.
-7. Repeat once if the first preview is not strong.
+5. Run the Hero, Anti-AI, Client-Specific, Scroll Story, Signature Component, and Sellable Demo gates.
+6. Fix spacing, typography, contrast, overflow, motion issues, and weak states.
+7. Remove anything that looks generic.
+8. Repeat once if the first preview is not strong.
 
 Do not claim the design is premium without looking at it if a browser/preview is available.
 
@@ -421,9 +481,11 @@ Do this:
 2. Read the existing website if a URL is provided and browser/network access is available.
 3. Produce 5 creative directions.
 4. Pick the strongest one.
-5. Generate ImageGen prompts if visual assets would improve the result.
-6. Invoke image generation if available, or output the prompts if not.
-7. Implement the selected direction.
-8. Preview the page.
-9. Improve obvious visual flaws.
-10. Summarize what changed and how to review it.
+5. Define the hero, signature component, and scroll story before coding.
+6. Check the gates on the concept and revise if needed.
+7. Generate ImageGen prompts if visual assets would improve the result.
+8. Invoke image generation if available, or output the prompts if not.
+9. Implement the selected direction.
+10. Preview the page.
+11. Improve any gate failure, starting with the hero.
+12. Summarize what changed and how to review it.

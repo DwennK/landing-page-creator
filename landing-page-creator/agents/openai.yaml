@@ -1,7 +1,7 @@
 interface:
   display_name: "Landing Page Creator"
-  short_description: "Awwwards-style landing pages, cinematic heroes, 21st.dev-inspired components, ImageGen direction."
+  short_description: "Sellable landing demos with Hero, Anti-AI, client-specific, scroll-story, and signature-component gates."
   brand_color: "#7C3AED"
-  default_prompt: "$landing-page-creator create a premium landing page with a cinematic hero, strong conversion logic, custom component composition, and ImageGen visual direction."
+  default_prompt: "$landing-page-creator create a sellable premium landing page with a Hero Gate, Anti-AI Gate, client-specific art direction, signature component, scroll story, and desktop/mobile preview iteration."
 policy:
   allow_implicit_invocation: true
