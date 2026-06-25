@@ -1,6 +1,6 @@
 ---
 name: landing-page-creator
-description: 'Create or redesign premium landing pages, homepages, hero sections, B2C pages, agency pages, SaaS/product pages, and visually ambitious marketing websites with No Compromise Mode enabled by default: hero-first iteration, one memorable visual trick, ImageGen asset escalation, 21st.dev-style scouting, GSAP/Three.js-grade motion when useful, Awwwards-level art direction, and strict sellable-demo gates. Use for requests mentioning landing pages, Awwwards-level design, 21st.dev-style components, cinematic hero, insane UI, premium frontend, ImageGen visuals, non-generic landing page, Hero Gate, Anti-AI Gate, scroll story, or conversion-focused redesign.'
+description: Create premium landing pages, homepages, and hero sections with hero-first design, one memorable visual trick, client-specific art direction, scroll-story motion, ImageGen visuals, and anti-AI-slop gates. Use for Awwwards-level pages, 21st.dev-style components, cinematic heroes, B2C pages, SaaS/product pages, and conversion-focused redesigns.
 ---
 
 # Landing Page Creator
@@ -26,13 +26,14 @@ Always follow this order:
 3. Choose one strong visual metaphor.
 4. Define the one big visual trick people will remember.
 5. Invent or scout component patterns and references.
-6. Generate or request ImageGen visuals when useful.
-7. Design and build the hero first.
-8. Preview the hero on desktop and mobile.
-9. Pass the mandatory gates before building the full page.
-10. Implement the selected direction.
-11. Preview and polish.
-12. Review against the mandatory gates and anti-slop checklist.
+6. Decide the hero asset strategy before implementation.
+7. Generate or request ImageGen visuals before building the hero when useful.
+8. Design and build the hero first.
+9. Preview the hero on desktop and mobile.
+10. Pass the mandatory gates before building the full page.
+11. Implement the selected direction.
+12. Preview and polish.
+13. Review against the mandatory gates and anti-slop checklist.
 
 If the user explicitly asks to code immediately, still do a very short creative direction pass first unless the task is a small targeted edit.
 
@@ -315,9 +316,11 @@ Use image generation when the page needs:
 
 If an image generation tool is available, invoke it explicitly when useful. If `$imagegen` is available, use `$imagegen`. If not available, produce precise image prompts and tell the user where to place the generated assets.
 
+Decide the hero asset strategy before building the hero: ImageGen, real assets, CSS/SVG, canvas, 3D, or hybrid.
+
 Before generating, create 3 image prompt options.
 
-If the hero would otherwise rely on a weak fake SVG, generic cards, fake dashboards, or abstract gradients, escalate to ImageGen or a better visual system.
+If the hero would otherwise rely on a weak fake SVG, generic cards, fake dashboards, or abstract gradients, escalate to ImageGen or a better visual system before implementation.
 
 Each ImageGen prompt must define:
 
@@ -476,12 +479,12 @@ Do this:
 4. Pick the strongest one.
 5. Read relevant references for hero, components, ImageGen, high-impact design, and creative production.
 6. Define the one big trick, section storyboard, asset plan, signature scene, motion stack, hero budget, and scroll story before coding.
-7. Do a short reference hunt if browsing is available.
-8. Build and preview the hero first.
-9. Check the gates on the hero and revise if needed.
-10. Generate ImageGen prompts if visual assets would improve the result.
-11. Invoke image generation if available, or output the prompts if not.
-12. Implement the selected direction.
+7. Decide the hero asset strategy: ImageGen, real assets, CSS/SVG, canvas, 3D, or hybrid.
+8. Do a short reference hunt if browsing is available.
+9. If the hero would be stronger with ImageGen, create 3 prompt options and invoke ImageGen before implementation.
+10. Build and preview the hero first.
+11. Check the gates on the hero and revise if needed.
+12. Implement the full page.
 13. Preview the full page.
 14. Improve any gate failure, starting with the hero.
 15. Summarize what changed and how to review it.

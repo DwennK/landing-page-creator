@@ -1,7 +1,7 @@
 interface:
   display_name: "Landing Page Creator"
-  short_description: "No-compromise creative production for sellable landing pages: concept, storyboard, assets, hero-first build, motion, QA."
+  short_description: "Hero-first premium landing page production."
   brand_color: "#7C3AED"
-  default_prompt: "$landing-page-creator create a no-compromise sellable landing page using Creative Production Mode: concept, section storyboard, asset plan, one big trick, hero-first build, ImageGen/assets, GSAP/Three.js-grade motion when useful, section screenshots, and QA loops until every gate passes."
+  default_prompt: "$landing-page-creator create a no-compromise sellable landing page using Creative Production Mode: concept, storyboard, asset strategy before hero build, ImageGen when useful, GSAP/Three.js-grade motion, screenshots, and QA loops until every gate passes."
 policy:
   allow_implicit_invocation: true
