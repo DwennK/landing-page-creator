@@ -1,9 +1,9 @@
 ---
-name: cinematic-landing-director
+name: landing-page-creator
 description: Create or redesign premium landing pages, homepages, hero sections, B2C pages, agency pages, SaaS/product pages, and visually ambitious marketing websites. Use for requests mentioning Awwwards-level design, 21st.dev-style components, cinematic hero, insane UI, premium frontend, ImageGen visuals, non-generic landing page, or conversion-focused redesign.
 ---
 
-# Cinematic Landing Director
+# Landing Page Creator
 
 ## Mission
 

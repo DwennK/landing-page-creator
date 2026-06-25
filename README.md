@@ -1,6 +1,6 @@
 # Landing Page Creator Skill
 
-Public Codex skill repository for `cinematic-landing-director`.
+Public Codex skill repository for `landing-page-creator`.
 
 ## Install
 
@@ -9,7 +9,7 @@ Install the skill from GitHub:
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo DwennK/landing-page-creator \
-  --path cinematic-landing-director
+  --path landing-page-creator
 ```
 
 Then restart Codex to pick up the new skill.
@@ -19,7 +19,7 @@ Then restart Codex to pick up the new skill.
 The editable skill source is in:
 
 ```text
-cinematic-landing-director/
+landing-page-creator/
 ```
 
-After editing, commit and push changes, then reinstall or update the local copy in `~/.codex/skills/cinematic-landing-director`.
+After editing, commit and push changes, then reinstall or update the local copy in `~/.codex/skills/landing-page-creator`.

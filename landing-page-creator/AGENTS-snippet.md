@@ -1,6 +1,6 @@
 ## Premium Landing Pages
 
-When I ask for a landing page, homepage, hero section, premium redesign, Awwwards-level page, 21st.dev-style UI, cinematic frontend design, or high-converting B2C page, use `$cinematic-landing-director`.
+When I ask for a landing page, homepage, hero section, premium redesign, Awwwards-level page, 21st.dev-style UI, cinematic frontend design, or high-converting B2C page, use `$landing-page-creator`.
 
 For these tasks:
 

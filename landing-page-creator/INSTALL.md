@@ -1,11 +1,11 @@
-# Install - Cinematic Landing Director
+# Install - Landing Page Creator
 
 ## Option A - Install from GitHub
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo DwennK/landing-page-creator \
-  --path cinematic-landing-director
+  --path landing-page-creator
 ```
 
 Then restart Codex to pick up the new skill.
@@ -13,7 +13,7 @@ Then restart Codex to pick up the new skill.
 Use it with:
 
 ```text
-$cinematic-landing-director crée une landing page pour microwest.ch. Ils vendent et réparent des téléphones. Je veux un hero de fou, des composants 21st.dev-style et une direction ImageGen.
+$landing-page-creator crée une landing page pour microwest.ch. Ils vendent et réparent des téléphones. Je veux un hero de fou, des composants 21st.dev-style et une direction ImageGen.
 ```
 
 ## Option B - Install manually for all Codex projects on your Mac
@@ -22,7 +22,7 @@ From this repository root:
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R cinematic-landing-director ~/.codex/skills/
+cp -R landing-page-creator ~/.codex/skills/
 ```
 
 Then restart Codex to pick up the new skill.
@@ -33,7 +33,7 @@ From the repository root:
 
 ```bash
 mkdir -p .codex/skills
-cp -R cinematic-landing-director .codex/skills/
+cp -R landing-page-creator .codex/skills/
 ```
 
 Then launch Codex from that repo.
@@ -53,5 +53,5 @@ In Codex CLI / IDE:
 or type:
 
 ```text
-$cinematic-landing-director
+$landing-page-creator
 ```

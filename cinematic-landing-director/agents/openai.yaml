@@ -1,7 +1,0 @@
-interface:
-  display_name: "Cinematic Landing Director"
-  short_description: "Awwwards-style landing pages, cinematic heroes, 21st.dev-inspired components, ImageGen direction."
-  brand_color: "#7C3AED"
-  default_prompt: "$cinematic-landing-director create a premium landing page with a cinematic hero, strong conversion logic, custom component composition, and ImageGen visual direction."
-policy:
-  allow_implicit_invocation: true
