@@ -1,7 +1,7 @@
 interface:
   display_name: "Landing Page Creator"
-  short_description: "Hero-first sellable demos with ImageGen escalation, 21st.dev-style scouting, and GSAP/Three-grade motion gates."
+  short_description: "No-compromise landing pages by default: hero-first, one big trick, ImageGen, reference hunting, GSAP/Three-grade motion."
   brand_color: "#7C3AED"
-  default_prompt: "$landing-page-creator create an extraordinary sellable landing page: build the hero first, use ImageGen if assets are needed, scout 21st.dev-style patterns, use GSAP/Three.js-grade motion when it improves the concept, and iterate desktop/mobile until the gates pass."
+  default_prompt: "$landing-page-creator create a no-compromise sellable landing page by default: define the one big trick, hunt premium references, build and preview the hero first, use ImageGen/assets and GSAP/Three.js-grade motion when they improve the concept, then iterate desktop/mobile until every gate passes."
 policy:
   allow_implicit_invocation: true

@@ -1,6 +1,43 @@
 # High-Impact Design Patterns
 
-Use this reference when the user wants an Awwwards-level, insane, cinematic, unforgettable, or directly sellable landing page.
+Use this reference for every full landing page creation or redesign. No Compromise Mode is the default.
+
+## No Compromise Mode
+
+Do not aim for “clean and acceptable.” Aim for a first viewport that feels beyond what the client expected.
+
+Default behavior:
+
+- choose the most memorable feasible concept
+- build one spectacular signature scene before filling the page
+- use ImageGen, real assets, GSAP, Three.js, canvas, or polished motion when they materially improve the result
+- remove safe generic patterns even if they look tidy
+- accept simpler lower sections if that protects hero quality
+
+Only downgrade ambition when the user explicitly requests a restrained/simple page or the task is a small targeted edit.
+
+## Reference Hunt
+
+When browsing is available, gather 3 references before coding:
+
+1. one hero/art-direction reference from Awwwards, Codrops, a premium studio, or a top product site
+2. one component/microinteraction reference from 21st.dev, Magic UI, Figma community, or similar
+3. one scroll/motion reference using sticky scenes, pinned timelines, WebGL, GSAP, or canvas
+
+Summarize the principle to reuse from each reference. Do not copy the design.
+
+## One Big Trick
+
+Before implementation, define the one visual idea a client will remember in one sentence.
+
+Strong examples:
+
+- “The phone repairs itself as the visitor scrolls.”
+- “The chaotic inbox flows through a glass automation engine and exits as clean decisions.”
+- “The property turns into a living control map with trust signals lighting up.”
+- “The product assembles from exploded layers around the CTA.”
+
+If the trick cannot be stated clearly, the direction is too weak.
 
 ## Hero-First Rule
 

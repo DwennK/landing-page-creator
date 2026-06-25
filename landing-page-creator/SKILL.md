@@ -1,6 +1,6 @@
 ---
 name: landing-page-creator
-description: Create or redesign premium landing pages, homepages, hero sections, B2C pages, agency pages, SaaS/product pages, and visually ambitious marketing websites with strict sellable-demo gates, hero-first iteration, ImageGen asset escalation, 21st.dev-style scouting, GSAP/Three.js-grade motion when useful, and Awwwards-level art direction. Use for requests mentioning Awwwards-level design, 21st.dev-style components, cinematic hero, insane UI, premium frontend, ImageGen visuals, non-generic landing page, Hero Gate, Anti-AI Gate, scroll story, or conversion-focused redesign.
+description: 'Create or redesign premium landing pages, homepages, hero sections, B2C pages, agency pages, SaaS/product pages, and visually ambitious marketing websites with No Compromise Mode enabled by default: hero-first iteration, one memorable visual trick, ImageGen asset escalation, 21st.dev-style scouting, GSAP/Three.js-grade motion when useful, Awwwards-level art direction, and strict sellable-demo gates. Use for requests mentioning landing pages, Awwwards-level design, 21st.dev-style components, cinematic hero, insane UI, premium frontend, ImageGen visuals, non-generic landing page, Hero Gate, Anti-AI Gate, scroll story, or conversion-focused redesign.'
 ---
 
 # Landing Page Creator
@@ -11,6 +11,8 @@ Create landing pages with exceptional art direction, memorable hero sections, un
 
 The goal is not a clean template. The goal is a custom, cinematic, brand-specific landing page that feels closer to high-end agency work than generic AI-generated UI.
 
+No Compromise Mode is the default for every landing page creation or redesign task. Do not wait for the user to ask for “insane” or “Awwwards-level”; assume the first version must be surprising, premium, and directly sellable.
+
 ## Non-Negotiable Rule
 
 Do not start by coding.
@@ -20,14 +22,15 @@ Always follow this order:
 1. Understand the business and conversion goal.
 2. Create multiple creative directions.
 3. Choose one strong visual metaphor.
-4. Invent or scout component patterns.
-5. Generate or request ImageGen visuals when useful.
-6. Design and build the hero first.
-7. Preview the hero on desktop and mobile.
-8. Pass the mandatory gates before building the full page.
-9. Implement the selected direction.
-10. Preview and polish.
-11. Review against the mandatory gates and anti-slop checklist.
+4. Define the one big visual trick people will remember.
+5. Invent or scout component patterns and references.
+6. Generate or request ImageGen visuals when useful.
+7. Design and build the hero first.
+8. Preview the hero on desktop and mobile.
+9. Pass the mandatory gates before building the full page.
+10. Implement the selected direction.
+11. Preview and polish.
+12. Review against the mandatory gates and anti-slop checklist.
 
 If the user explicitly asks to code immediately, still do a very short creative direction pass first unless the task is a small targeted edit.
 
@@ -64,6 +67,26 @@ Avoid:
 
 Treat these gates as hard blockers. If any gate fails, stop expanding the page and revise the concept, hero, component, copy, or interaction until it passes.
 
+### No Compromise Gate
+
+For full landing page creation or redesign, default to the most memorable feasible execution, not the safest clean layout. Prefer one extraordinary signature scene over a complete but average page.
+
+Do not downgrade to a generic hero unless the user explicitly asks for a conservative/simple page or the task is only a small targeted edit.
+
+### One Big Trick Gate
+
+Before coding, write the one-liner for the visual trick the client will remember.
+
+Examples: “the phone repairs itself on scroll,” “the building turns into a living control map,” “the invoice chaos flows through a glass automation engine,” “the product assembles from exploded layers.”
+
+If there is no one-liner, the concept is not strong enough.
+
+### Hero Production Budget Gate
+
+Spend most of the creative effort on the first viewport and signature scene. Lower sections can be simpler; the hero cannot.
+
+For full landing pages, allocate roughly 60-70% of design attention to hero composition, asset quality, motion, copy, CTA, and mobile hero polish before expanding the page.
+
 ### Hero-First Build Gate
 
 Build the hero before the rest of the page. Do not fill out generic sections to compensate for a weak first viewport.
@@ -92,7 +115,7 @@ Choose an execution tier before coding:
 - **Cinematic interactive**: layered scene, cursor/scroll response, custom transitions.
 - **Awwwards-grade**: sticky scroll story, GSAP/ScrollTrigger or equivalent, WebGL/Three.js/Spline/Rive/canvas if the concept needs depth, physics, object motion, or product presence.
 
-If the user asks for a stunning, insane, Awwwards-level, or client-sellable page, default to Cinematic interactive or Awwwards-grade.
+Default to Cinematic interactive or Awwwards-grade for full landing page creation/redesign. Use Premium static only when it better fits the brand or the user explicitly wants restraint.
 
 ### Anti-AI Gate
 
@@ -142,7 +165,9 @@ Avoid rough hand-drawn SVGs, distorted device mockups, fake app screenshots, mes
 
 ### 21st.dev Scouting Gate
 
-Before implementing an ambitious page, scout or invent at least 2-3 premium interaction patterns inspired by 21st.dev, Magic UI, Codrops, Awwwards, Figma community, or similar sources when network access is available. Use them as raw material, not copied templates.
+Before implementing, scout or invent at least 2-3 premium interaction patterns inspired by 21st.dev, Magic UI, Codrops, Awwwards, Figma community, or similar sources when network access is available. Use them as raw material, not copied templates.
+
+If browsing is available, perform a short reference hunt before coding: one hero/art-direction reference, one component/microinteraction reference, and one scroll/motion reference.
 
 ### Sellable Demo Gate
 
@@ -458,12 +483,13 @@ Do this:
 3. Produce 5 creative directions.
 4. Pick the strongest one.
 5. Read relevant references for hero, components, ImageGen, and high-impact design.
-6. Define the hero, signature scene, motion stack, and scroll story before coding.
-7. Build and preview the hero first.
-8. Check the gates on the hero and revise if needed.
-9. Generate ImageGen prompts if visual assets would improve the result.
-10. Invoke image generation if available, or output the prompts if not.
-11. Implement the selected direction.
-12. Preview the full page.
-13. Improve any gate failure, starting with the hero.
-14. Summarize what changed and how to review it.
+6. Define the one big trick, signature scene, motion stack, hero budget, and scroll story before coding.
+7. Do a short reference hunt if browsing is available.
+8. Build and preview the hero first.
+9. Check the gates on the hero and revise if needed.
+10. Generate ImageGen prompts if visual assets would improve the result.
+11. Invoke image generation if available, or output the prompts if not.
+12. Implement the selected direction.
+13. Preview the full page.
+14. Improve any gate failure, starting with the hero.
+15. Summarize what changed and how to review it.
