@@ -86,6 +86,14 @@ Examples: “the phone repairs itself on scroll,” “the building turns into a
 
 If there is no one-liner, the concept is not strong enough.
 
+### Freshness Gate
+
+Do not reuse the examples in this skill as final concepts. Examples such as “device x-ray,” “repair lens,” “mission control,” “proof constellation,” “service orbit,” and “phone repairs itself on scroll” are inspiration seeds only.
+
+For every new landing page, invent a fresh concept by combining one specific business truth, one buyer anxiety, one unexpected visual metaphor, one interaction mechanic, and one proof or conversion moment.
+
+Fail if the selected hero could be described using only an example already present in this skill. The final concept must include at least one surprising twist specific to this client.
+
 ### Hero Production Budget Gate
 
 Spend most of the creative effort on the first viewport and signature scene. Lower sections can be simpler; the hero cannot.
@@ -97,6 +105,8 @@ For full landing pages, allocate roughly 60-70% of design attention to hero comp
 Build the hero before the rest of the page. Do not fill out generic sections to compensate for a weak first viewport.
 
 Pass only after desktop and mobile hero preview. If the hero does not look client-ready, rebuild the hero before continuing.
+
+For full landing pages, use Hero Only First Mode when possible: implement only the hero first, preview desktop and mobile, verify the one big trick and CTA, then build lower sections. If the hero fails, delete or rebuild it before writing lower sections.
 
 ### Hero Gate
 
@@ -166,7 +176,7 @@ Do not add heavy libraries for decorative motion. Do add them when they create t
 
 Invent at least one custom component that could be shown in a sales call.
 
-It must combine a client-specific metaphor, content function, interaction mechanic, and conversion purpose. Examples: device x-ray, repair timeline, before/after slider, trust beam, service orbit, diagnostic scanner, quote builder, guarantee rail, process tunnel, proof constellation.
+It must combine a client-specific metaphor, content function, interaction mechanic, and conversion purpose. Use `references/component-bank.md` for mutation seeds, then rename and reshape the component around this client.
 
 ### Asset Escalation Gate
 
@@ -230,6 +240,8 @@ Each direction must include:
 Then select the strongest direction and explain why.
 
 Do not choose the safest direction by default. Choose the one with the best balance of memorability, clarity, conversion, brand fit, and feasibility.
+
+Before selecting the final direction, read `references/concept-collision-engine.md` and generate 12 raw concept collisions. Use them to find a fresher hero idea than the obvious industry pattern.
 
 ## Phase 3 — Visual Metaphor
 
@@ -299,6 +311,10 @@ The visitor must understand the promise in less than 3 seconds.
 
 Read `references/hero-patterns.md` before selecting the final hero pattern.
 
+Before coding, output a Hero Scene Contract with: concept, one big trick, main visual object, visual world, composition, foreground, midground, background, motion states, scroll/cursor interaction, ImageGen/asset strategy, proof embedded in the scene, CTA placement, mobile adaptation, and why it cannot be reused for another client.
+
+Do not code the hero until this contract is specific.
+
 ## Phase 7 — ImageGen Direction
 
 Use image generation when the page needs:
@@ -346,21 +362,11 @@ ImageGen prompts must avoid:
 
 ## Phase 8 — Landing Structure
 
-Use strong rhythm.
-
-Recommended structure:
-
-1. Hero — promise + metaphor + CTA
-2. Pain — show the current frustration clearly
-3. Transformation — show the better future
-4. Services/Product — explain the offer visually
-5. Proof — trust signals, cases, reviews, numbers, brands
-6. Process — how it works in simple steps
-7. Differentiation — why this company is better
-8. Objections — answer doubts
-9. Final CTA — strong, simple, direct
+Use strong rhythm: hero, pain, transformation, offer, proof, process, differentiation, objections, and final CTA. Change, merge, or delete these beats whenever the concept needs a stronger story.
 
 Do not use generic section labels unless the section itself is distinctive.
+
+Before coding, define an art direction system: typography mood, color logic, material language, shape language, depth/shadow logic, motion language, texture/image style, CTA style, and mobile art direction. Every visual choice must support the selected metaphor.
 
 ## Phase 9 — Copywriting Rules
 
@@ -435,6 +441,8 @@ After implementation:
 7. Remove anything that looks generic.
 8. For full builds, run at least two screenshot critique loops before delivery.
 
+If any screenshot critique loop fails, read `references/fix-bad-output.md` before editing.
+
 Do not claim the design is premium without looking at it if a browser/preview is available.
 
 ## Phase 12 — Review Checklist
@@ -476,15 +484,15 @@ Do this:
 1. Inspect the existing project if available.
 2. Read the existing website if a URL is provided and browser/network access is available.
 3. Produce 5 creative directions.
-4. Pick the strongest one.
-5. Read relevant references for hero, components, ImageGen, high-impact design, and creative production.
-6. Define the one big trick, section storyboard, asset plan, signature scene, motion stack, hero budget, and scroll story before coding.
-7. Decide the hero asset strategy: ImageGen, real assets, CSS/SVG, canvas, 3D, or hybrid.
-8. Do a short reference hunt if browsing is available.
-9. If the hero would be stronger with ImageGen, create 3 prompt options and invoke ImageGen before implementation.
-10. Build and preview the hero first.
-11. Check the gates on the hero and revise if needed.
-12. Implement the full page.
-13. Preview the full page.
-14. Improve any gate failure, starting with the hero.
+4. Read `references/concept-collision-engine.md`, generate 12 raw concept collisions, and use them to avoid the obvious industry pattern.
+5. Pick the strongest concept.
+6. Read relevant references for hero, components, ImageGen, high-impact design, and creative production.
+7. Define the one big trick, art direction system, Hero Scene Contract, section storyboard, asset plan, signature scene, motion stack, hero budget, and scroll story before coding.
+8. Decide the hero asset strategy: ImageGen, real assets, CSS/SVG, canvas, 3D, or hybrid.
+9. Do a short reference hunt if browsing is available.
+10. If the hero would be stronger with ImageGen, create 3 prompt options and invoke ImageGen before implementation.
+11. Build and preview only the hero first when possible.
+12. Check the gates on the hero and revise if needed.
+13. Implement the full page.
+14. Preview the full page and improve any gate failure, starting with the hero.
 15. Summarize what changed and how to review it.

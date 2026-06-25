@@ -1,6 +1,22 @@
-# Component Bank
+# Component Mutation Bank
 
-Use these as inspiration for custom composition. Do not stack them randomly.
+Use these as mutation seeds for custom composition. Do not pick components directly, stack them randomly, or ship a component with the same name as a pattern listed here.
+
+For every component idea, change at least 2 of these:
+
+- visual material
+- business object
+- interaction mechanic
+- proof content
+- layout structure
+- motion behavior
+- conversion role
+
+Bad: “Device X-Ray.”
+Better: “A cursor-controlled diagnostic light passes through a cracked device and reveals repair time, price confidence, and warranty proof inside the glass layers.”
+
+Bad: “Service Orbit.”
+Better: “A magnetic repair counter locks each service into the phone body like a precision tool, revealing time, guarantee, and CTA.”
 
 ## Hero-Grade Components
 
@@ -54,3 +70,5 @@ Examples:
 - Trust Path: animated path connects proof points, certifications, reviews, and CTA.
 - Service Orbit: services rotate around the product/customer, each expanding on hover with one concrete benefit.
 - Timeline Tunnel: visitor scrolls through a process as if moving through a cinematic tunnel.
+
+Never ship these examples as-is. Rename and reshape the component around the client’s object, buyer anxiety, proof moment, and conversion goal.

@@ -25,10 +25,49 @@ Before coding, define:
 - campaign idea: what makes this site memorable?
 - one big trick: what visual moment will the client remember?
 - world/metaphor: what world does the visitor enter?
+- concept collision: which unexpected business object, buyer anxiety, visual world, interaction, and proof moment are being combined?
 - tone: premium, playful, cinematic, editorial, technical, surreal, luxurious, local, etc.
 - commercial promise: why should the buyer act now?
 
 If the concept sounds like “premium repair website” or “modern SaaS page,” it is too weak.
+
+Read `concept-collision-engine.md` before selecting the final concept.
+
+## Art Direction System
+
+Before coding, define:
+
+- typography mood
+- color logic
+- material language
+- shape language
+- depth/shadow logic
+- motion language
+- texture/image style
+- button/CTA style
+- mobile art direction
+
+Do not choose colors, gradients, shadows, radii, or motion randomly. Every visual choice must support the selected metaphor.
+
+## Hero Scene Contract
+
+Before coding the hero, output:
+
+- Hero concept
+- One big trick
+- Main visual object
+- Visual world
+- Composition
+- Foreground, midground, background
+- Motion states
+- Scroll/cursor interaction
+- ImageGen / asset strategy
+- Proof embedded in the scene
+- CTA placement
+- Mobile adaptation
+- What makes it impossible to reuse for another client
+
+Do not code the hero until this contract is specific.
 
 ## Section Storyboard
 

@@ -142,16 +142,8 @@ Scout or reproduce the behavior of 2 to 3 premium patterns before implementation
 
 Use these as ingredients inside a custom scene. Do not paste a component library layout as the page.
 
-## Microwest Example Direction
+## Example Rule
 
-For a Swiss phone repair and resale shop:
+Do not rely on fixed industry examples. Generate a fresh concept from the business object, buyer anxiety, proof moment, visual world, and interaction mechanic.
 
-- Hero: premium phone in a precision repair lab, cracked glass suspended above the device.
-- Scroll beat 1: cracks separate and reveal diagnostic scan lines.
-- Scroll beat 2: battery, camera, screen, and board layers light up as service choices.
-- Scroll beat 3: repair timeline snaps into place with warranty proof.
-- Signature component: device x-ray or repair lens.
-- CTA: "Réparer mon téléphone" or equivalent local action.
-- Asset: ImageGen phone repair lab visual or high-quality CSS/Three.js device scene.
-
-The page should feel like a custom diagnostic experience, not a stack of service cards.
+Concrete examples may be used only as inspiration seeds, never as final output.
