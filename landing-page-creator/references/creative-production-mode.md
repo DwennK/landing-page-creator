@@ -1,6 +1,6 @@
 # Creative Production Mode
 
-Use this reference for full landing page creation/redesign when the result must feel like a high-budget creative studio site, not a polished template.
+Use this reference for every full landing page creation/redesign. It is mandatory, not optional.
 
 ## Core Rule
 
@@ -15,6 +15,8 @@ Do not build the full page in one pass. Work like a small creative team:
 7. screenshot critique and polish
 
 Each pass must improve the idea, not just add more UI.
+
+Skip this workflow only for small targeted edits or when the user explicitly requests a simple/conservative page.
 
 ## Concept Pass
 
@@ -112,10 +114,10 @@ Pass screenshots and the user goal, not your preferred answer. Treat subagent ou
 
 ## Long-Run Mode
 
-For “10k site,” “Oryzo-level,” “Awwwards-level,” “spend time,” or similar requests, expect a longer build:
+For every full build, expect a longer build. For “10k site,” “Oryzo-level,” “Awwwards-level,” “spend time,” or similar requests, be even stricter:
 
 - prioritize fewer stronger sections over many average sections
-- run at least two screenshot critique loops
+- run at least two screenshot critique loops for every full build
 - keep a punch list of visual failures
 - fix the biggest visible weakness before adding new content
 - stop calling it done while any section looks embarrassing in isolation

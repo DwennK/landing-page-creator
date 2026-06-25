@@ -13,7 +13,7 @@ The goal is not a clean template. The goal is a custom, cinematic, brand-specifi
 
 No Compromise Mode is the default for every landing page creation or redesign task. Do not wait for the user to ask for “insane” or “Awwwards-level”; assume the first version must be surprising, premium, and directly sellable.
 
-For top-tier full builds, use Creative Production Mode: read `references/creative-production-mode.md` and work in passes instead of building the whole page in one shot.
+For every full landing page creation or redesign, always use Creative Production Mode: read `references/creative-production-mode.md` and work in passes instead of building the whole page in one shot.
 
 ## Non-Negotiable Rule
 
@@ -430,7 +430,7 @@ After implementation:
 5. Run the Hero-First, Hero, Visual Ambition, Anti-AI, Client-Specific, Scroll Story, Motion Library, Signature Component, Component Reality, Asset Escalation, 21st.dev, Sellable Demo, Screenshot Critic, and Section Screenshot gates.
 6. Fix spacing, typography, contrast, overflow, motion issues, and weak states.
 7. Remove anything that looks generic.
-8. Repeat once if the first preview is not strong.
+8. For full builds, run at least two screenshot critique loops before delivery.
 
 Do not claim the design is premium without looking at it if a browser/preview is available.
 
