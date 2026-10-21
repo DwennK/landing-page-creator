@@ -1,6 +1,6 @@
 # Anti-AI-Slop Rules
 
-Delete or rewrite anything that looks like generic AI output.
+Diagnose generic output from the actual rendered result, then repair its cause. These patterns are warning signs, not blanket bans on common visual primitives or on a faithful implementation of a supplied reference.
 
 ## Visual Clichés to Avoid
 
@@ -63,3 +63,15 @@ Replace vague claims with concrete conversion messages:
 - What proof supports it?
 - What action should the visitor take?
 - Why trust this company now?
+
+## Detector Pass
+
+Run this on rendered screenshots, not only source code:
+
+1. Imagine swapping the logo, colors, and business nouns for an unrelated company. If the same scene and story still fit unchanged, specificity has failed. Preserve meaningful typography and real content when judging a typography-led concept.
+2. Imagine gradients, glass, and shadows removed. If no composition or business object remains, art direction has failed.
+3. Count repeated card shapes. If cards are the default answer to unrelated content, narrative structure has failed.
+4. Identify the signature moment. If it cannot be named in one sentence, memorability has failed.
+5. Inspect mobile separately. Reject lost hierarchy, accidental crops, unreadable scenes, or broken interactions. Simple stacking can pass when it intentionally preserves the concept, readability, and CTA.
+
+Repair the underlying concept, asset, composition, or content. Do not mask failure with more decoration.

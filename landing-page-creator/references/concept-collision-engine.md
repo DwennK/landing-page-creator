@@ -60,7 +60,7 @@ Choose one:
 - zoom tunnel
 - section-to-section object continuity
 
-## Required Output
+## Internal Output
 
 Generate 12 raw concept collisions.
 
@@ -72,6 +72,8 @@ Then select 3 concepts worth exploring.
 
 Then select 1 final concept.
 
+In One-Shot mode, keep this competition internal. Do not ask the user to choose and do not print the discarded concepts unless requested. Turn the three finalists into complete directions and score them using the production runbook before selecting automatically.
+
 Do not choose the safest concept. Choose the concept with the strongest mix of:
 
 - wow factor
@@ -79,6 +81,8 @@ Do not choose the safest concept. Choose the concept with the strongest mix of:
 - conversion clarity
 - implementation feasibility
 - mobile viability
+- asset feasibility
+- truthful use of available proof
 
 ## Rejection Rules
 

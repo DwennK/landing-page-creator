@@ -1,5 +1,16 @@
 # ImageGen Prompt System
 
+Use image generation in two distinct ways:
+
+1. **Visual-direction comp** — establish composition, atmosphere, materials, depth, color, and negative space before implementation.
+2. **Production assets** — generate the isolated hero object, background plate, textures, or section imagery that code will compose responsively.
+
+Do not paste a full-page generated screenshot into the website. Text, CTA, semantics, responsive layout, and interactions must remain real code.
+
+## Comp-First Template
+
+Create a high-end landing-page visual direction comp for [client/offer], designed for a 16:10 desktop viewport. The page must communicate [specific promise] to [buyer] through [visual metaphor]. Compose a bespoke first viewport with [main object], deliberate foreground/midground/background depth, clear negative space for real HTML headline and CTA at [position], and a visual handoff into the next scroll scene. Art direction: [typography mood without rendering text], [palette], [materials], [lighting], [camera], [texture]. It should feel like a commissioned campaign, not a UI template. No readable text, logos, fake UI, generic SaaS cards, bento grid, stock-photo people, random holograms, cliché AI gradient, or decorative objects unrelated to the offer.
+
 ## Prompt Template
 
 Create a premium visual asset for a landing page.
@@ -13,6 +24,15 @@ Camera: [macro, isometric, wide-angle, top-down, editorial]
 Brand fit: [why it matches the company]
 Usage: [hero background, section visual, CTA backdrop, icon style]
 Negative constraints: no text, no logos, no stock-photo people, no messy details, no random holograms, no cliché AI gradients, no distorted hands, no illegible UI.
+
+## Production Rules
+
+- Generate wide enough for desktop cropping and plan a separate mobile crop or asset when necessary.
+- Ask for negative space where live copy and CTAs will sit.
+- Prefer layered assets or clean isolation when the object must move independently.
+- Inspect the result at the actual hero crop before accepting it.
+- Reject accidental text, warped products, broken hands, incoherent geometry, and off-brand styling.
+- Optimize the selected assets for the project; do not ship huge source files when smaller web formats preserve quality.
 
 ## Example — Phone Repair Hero
 

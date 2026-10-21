@@ -1,164 +1,171 @@
-# Creative Production Mode
+# 10K One-Shot Production Runbook
 
-Use this reference for every full landing page creation/redesign. It is mandatory, not optional.
+Use this for every full landing-page creation or redesign. It converts one user prompt into a complete autonomous production run.
 
-## Core Rule
+The user gives one brief. The agent performs several internal passes without requesting approval unless a truly material ambiguity cannot be inferred safely.
 
-Do not build the full page in one pass. Work like a small creative team:
+## Pass 0 — Evidence and Constraints
 
-1. concept
-2. section storyboard
-3. asset plan
-4. motion prototype
-5. hero build
-6. section-by-section build
-7. screenshot critique and polish
+Inspect before inventing:
 
-Each pass must improve the idea, not just add more UI.
+- repository structure, framework, route, package manager, and current scripts
+- existing website or supplied references
+- logos, photography, typefaces, colors, product imagery, and brand rules
+- current copy, claims, proof, CTAs, forms, analytics, SEO, URLs, and integrations
+- viewport and performance constraints
 
-Skip this workflow only for small targeted edits or when the user explicitly requests a simple/conservative page.
+Classify each important input as preserve, improve, replace, or missing. Do not fabricate missing proof. Read `review-checklist.md` now and establish the applicable acceptance evidence before implementation.
 
-## Concept Pass
+## Pass 1 — Design Read
 
-Before coding, define:
+Write internally:
 
-- campaign idea: what makes this site memorable?
-- one big trick: what visual moment will the client remember?
-- world/metaphor: what world does the visitor enter?
-- concept collision: which unexpected business object, buyer anxiety, visual world, interaction, and proof moment are being combined?
-- tone: premium, playful, cinematic, editorial, technical, surreal, luxurious, local, etc.
-- commercial promise: why should the buyer act now?
+> This page should make [buyer] feel [emotion] because [specific promise], proven by [evidence], inside a [visual world].
 
-If the concept sounds like “premium repair website” or “modern SaaS page,” it is too weak.
+Choose the three design dials and identify:
 
-Read `concept-collision-engine.md` before selecting the final concept.
+- the dominant business object
+- the buyer’s strongest anxiety
+- the most convincing proof moment
+- the desired conversion action
+- the visual behavior the market expects
+- one convention worth breaking
 
-## Art Direction System
+## Pass 2 — Internal Creative Competition
 
-Before coding, define:
+Read `concept-collision-engine.md`. Generate raw collisions, then form three complete directions.
 
-- typography mood
-- color logic
-- material language
-- shape language
-- depth/shadow logic
-- motion language
-- texture/image style
-- button/CTA style
-- mobile art direction
+For each direction, define internally:
 
-Do not choose colors, gradients, shadows, radii, or motion randomly. Every visual choice must support the selected metaphor.
+- concept name and one big trick
+- emotional angle and visual metaphor
+- hero composition
+- signature component
+- scroll-story beats
+- asset strategy
+- motion stack
+- proof and CTA logic
+- mobile adaptation
 
-## Hero Scene Contract
+Score each from 1 to 5 on:
 
-Before coding the hero, output:
+- three-second clarity
+- client specificity
+- originality
+- conversion strength
+- feasibility in the available stack and time
+- asset feasibility
+- mobile viability
 
-- Hero concept
-- One big trick
-- Main visual object
-- Visual world
-- Composition
-- Foreground, midground, background
-- Motion states
-- Scroll/cursor interaction
-- ImageGen / asset strategy
-- Proof embedded in the scene
-- CTA placement
-- Mobile adaptation
-- What makes it impossible to reuse for another client
+Select automatically. Originality cannot compensate for unclear value, and clarity cannot compensate for a generic template. In a close result, choose the more memorable direction with the simpler implementation path.
 
-Do not code the hero until this contract is specific.
+Do not show the rejected directions unless the user asks.
 
-## Section Storyboard
+## Pass 3 — Reference and Asset Direction
 
-Every section needs a named idea, not just a layout.
+When network access is available, perform a short reference hunt:
 
-For each section, write:
+1. one art-direction or hero reference
+2. one interaction/component reference
+3. one motion or scroll-story reference
 
-- section name
-- job in the story
-- visual scene or asset
-- interaction/motion
-- conversion purpose
-- proof/content required
-- screenshot failure risk
+Extract principles; do not clone layouts or copyrighted expression.
 
-Delete sections that do not have a job. Do not create filler sections.
+Choose an asset path:
 
-## Asset Plan
+- **real-assets first** when the client’s material is strong
+- **comp-first ImageGen** for a new cinematic visual world
+- **code-first** for typography-led, diagrammatic, interface, or generative directions
+- **hybrid** when generated key art and coded interaction reinforce each other
 
-List every asset before implementation:
+If using ImageGen, read `imagegen-prompts.md`, generate the key art or comp, inspect it, and reject weak or off-brand results before coding around them.
 
-- real client assets to reuse
-- ImageGen assets to create
-- product/object renders needed
-- texture/background/material assets
-- icons or diagrams
-- video/image-sequence candidates
+## Pass 4 — Scene and Story Blueprint
 
-If a section would rely on fake UI cards because no asset exists, generate or source a better asset, or redesign the section.
+Create a concise internal production blueprint.
 
-## Motion Prototype
+### Hero scene
 
-Define motion before coding:
+- main object and visual world
+- foreground, midground, and background
+- first-frame composition
+- headline, support copy, CTA, and proof placement
+- initial, interactive, and resolved states
+- asset layers and cropping behavior
+- mobile recomposition
 
-- scroll beats
-- pinned/sticky regions
-- scrubbed timelines
-- hover/cursor interactions
-- object states
-- reduced-motion fallback
-- performance budget
+### Scroll story
 
-Use GSAP/ScrollTrigger, Three.js/WebGL, canvas, Framer Motion/Motion, Rive, Spline, or image sequences only when they create the signature selling moment.
+Plan three to five beats:
 
-## Hero Acceptance
+1. hook
+2. tension or buyer problem
+3. transformation or expertise
+4. proof
+5. action
 
-The hero must pass before the rest of the page is built.
+Each section needs a story job, visual device, content/proof, motion behavior, and conversion purpose. Delete filler before building it.
 
-Pass only if:
+### Motion storyboard
 
-- the first screenshot feels like a custom campaign
-- the main visual could not belong to a random company
-- the one big trick is visible or strongly implied
-- text and CTA are clear without explaining the design
-- mobile still feels intentionally designed
+Define triggers, pinned regions, timeline states, handoffs between sections, reduced-motion fallback, and mobile behavior. Read `motion-engineering.md` when motion is material.
 
-If it fails, rebuild the hero. Do not compensate with lower sections.
+## Pass 5 — Hero-Only Build
 
-## Section Acceptance
+Implement the hero and the minimum surrounding shell first.
 
-Each section must pass as a standalone screenshot.
+Before expanding:
 
-Pass only if:
+- render desktop and mobile
+- confirm the promise reads in roughly three seconds
+- confirm the custom scene dominates the first viewport without obscuring the CTA
+- confirm the one big trick is visible or strongly anticipated
+- confirm mobile is a deliberate composition
+- reject anything that resembles the kill patterns in `anti-ai-slop.md`
 
-- the section has a clear idea
-- the section contains real information, proof, asset, or interaction
-- spacing and composition feel intentional
-- it does not look like an empty card container
-- it helps sell the business
+Apply the clarity, specificity, composition, asset, and mobile gates from `review-checklist.md`. If the hero fails, use `fix-bad-output.md` before expanding the page. Capture the signature scene's key states when motion is part of the hero. Hero and full-page repairs share the same three-cycle creative budget; do not reset it at each pass.
 
-If a section is just decorative, replace it with a tighter proof block or a more useful interactive component.
+## Pass 6 — Full Story Build
 
-## Subagents
+Build only the sections that advance the sales argument. Reuse the hero’s visual grammar so the page feels authored as one system.
 
-Use subagents when available for higher-stakes builds:
+For every major section, require at least one of:
 
-- **Art direction critic**: review screenshots and identify weak/generic/cheap sections.
-- **Motion/interaction critic**: review whether motion supports the story or is decorative.
-- **Conversion critic**: review whether each section helps the buyer decide.
-- **Frontend QA critic**: review responsiveness, performance, accessibility, and visual bugs.
+- concrete proof
+- useful comparison
+- meaningful interaction
+- real object or asset
+- specific objection resolution
+- clear conversion step
 
-Pass screenshots and the user goal, not your preferred answer. Treat subagent output as critique; the main agent still owns the final decision.
+Alternate intensity. A spectacular page still needs calm reading zones, clean proof, and obvious action.
 
-## Long-Run Mode
+## Pass 7 — Browser Critique
 
-For every full build, expect a longer build. For “10k site,” “Oryzo-level,” “Awwwards-level,” “spend time,” or similar requests, be even stricter:
+Run the page in the real application. Use desktop `1440x900` or larger and mobile around `390x844`.
 
-- prioritize fewer stronger sections over many average sections
-- run at least two screenshot critique loops for every full build
-- keep a punch list of visual failures
-- fix the biggest visible weakness before adding new content
-- stop calling it done while any section looks embarrassing in isolation
+Perform one batched inspection across:
 
-The result should feel like a sellable creative prototype, not a first draft.
+- hero and every major section
+- page rhythm and continuity
+- line breaks, contrast, alignment, and cropping
+- sticky and scroll-trigger boundaries
+- navigation, CTA, forms, and focus states
+- console errors, overflow, loading, and reduced motion
+
+Create one grouped punch list ordered by visible impact, with evidence and a cause for each failure. Follow `fix-bad-output.md` until the applicable gates pass or the shared creative budget is exhausted. Compare before/after evidence at matching viewports and scroll states; do not endlessly tweak low-value details.
+
+## Pass 8 — Finish and Handoff
+
+Read `review-checklist.md`. Claiming a successful finished design is blocked by:
+
+- a generic or weak hero
+- invented business proof
+- broken mobile composition
+- decorative motion that fights comprehension
+- console errors or broken conversion paths
+- a major section that looks unfinished in isolation
+
+Any failed gate triggers `fix-bad-output.md`; an unverified gate cannot be called passed. Numerical scores may prioritize work but cannot authorize acceptance. If the repair budget or a real blocker prevents acceptance, hand off the strongest working result with its specific unmet gate and next practical remedy, without presenting it as finished premium work.
+
+Finish with a concise evidence-based handoff. State what was verified and what was not.

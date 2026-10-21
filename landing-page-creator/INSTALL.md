@@ -1,58 +1,52 @@
 # Install - Landing Page Creator
 
-## Option A - Install manually for all Codex/Agents projects on your Mac
+## Personal installation
 
-Clone or download this repository, then run from the repository root:
+Ask Codex to install the skill from this repository:
+
+```text
+$skill-installer Install landing-page-creator from https://github.com/DwennK/landing-page-creator, using the landing-page-creator subdirectory.
+```
+
+For a manual installation, clone or download this repository and run from its root:
 
 ```bash
 mkdir -p ~/.agents/skills
 cp -R landing-page-creator ~/.agents/skills/
 ```
 
-Then restart Codex to pick up the new skill.
+Codex detects skill changes automatically; restart only if the skill or update does not appear. See the [official skill documentation](https://developers.openai.com/codex/skills/).
 
-Use it with:
+If an existing installation is already discovered under `~/.codex/skills/landing-page-creator`, update that copy in place instead of creating another. Keep one active copy: duplicate names can appear separately in the skill picker. Preserve any personal edits before replacing files.
 
-```text
-$landing-page-creator crée une landing page pour microwest.ch. Ils vendent et réparent des téléphones. Je veux un hero de fou, des composants 21st.dev-style et une direction ImageGen.
-```
+## Repository-scoped installation
 
-## Option B - Install only in one repo
+Copy the skill to the target project's `.agents/skills/landing-page-creator` directory, then launch Codex in that project. Choose personal or repository scope instead of duplicating the same skill in both.
 
-From this repository root:
+## Official GSAP companion skills
 
-```bash
-mkdir -p .agents/skills
-cp -R landing-page-creator .agents/skills/
-```
-
-Then launch Codex from that repo.
-
-## Optional - Legacy Codex Desktop fallback
-
-Some Codex Desktop builds still load local skills from `~/.codex/skills`. If `/skills` does not show `landing-page-creator`, mirror the skill there:
-
-```bash
-mkdir -p ~/.codex/skills
-cp -R landing-page-creator ~/.codex/skills/
-```
-
-Then restart Codex.
-
-## Optional - Add project instruction
-
-Copy the contents of `AGENTS-snippet.md` into your repo-level `AGENTS.md`.
-
-## Verify
-
-In Codex CLI / IDE:
+For GSAP work, install the eight skills from [GreenSock's official repository](https://github.com/greensock/gsap-skills) separately:
 
 ```text
-/skills
+$skill-installer Install all eight skills from https://github.com/greensock/gsap-skills: gsap-core, gsap-timeline, gsap-scrolltrigger, gsap-plugins, gsap-react, gsap-frameworks, gsap-performance, and gsap-utils, each under skills/.
 ```
 
-or type:
+They are technical references, not bundled copies or required runtime dependencies of this skill. The motion reference selects only those needed for the chosen framework and scene. If unavailable, use official GSAP documentation. Installing skills does not install the `gsap` npm package in any project.
+
+## Recommended prompt
 
 ```text
-$landing-page-creator
+$landing-page-creator Build a spectacular, client-specific responsive landing page. Choose the strongest feasible direction automatically, use original ImageGen assets when useful, and create purposeful signature motion. Inspect the real desktop/mobile result, reject generic output, and reconcept failed areas within the repair budget before claiming completion. Preserve existing business behavior and do not pause for minor creative decisions.
 ```
+
+## Browser checks on macOS
+
+Use installed Google Chrome with an isolated test profile, headless by default. Keep `PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1`; do not download Chromium or reuse a personal browser profile. Close task-owned test sessions even when checks fail, and preserve unrelated tabs and review previews. Full rules are in [SKILL.md](SKILL.md#browser-choice-and-session-cleanup).
+
+## Optional project instruction
+
+Copy the relevant guidance from [AGENTS-snippet.md](AGENTS-snippet.md) into your project's `AGENTS.md`.
+
+## Verify discovery
+
+In Codex CLI or IDE, use `/skills` or type `$landing-page-creator`. Confirm that only the intended copy is active.

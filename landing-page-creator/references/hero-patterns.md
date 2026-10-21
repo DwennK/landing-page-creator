@@ -1,5 +1,7 @@
 # Hero Patterns
 
+These are structural mechanics, not ready-made concepts. Mutate the object, world, composition, proof, and interaction around the specific client. Never ship the pattern name or the example unchanged.
+
 ## 1. Cinematic Product Reveal
 
 A product or service appears from shadow/light with layered depth, strong typography, and minimal but confident CTA placement.

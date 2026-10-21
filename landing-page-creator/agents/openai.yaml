@@ -1,7 +1,7 @@
 interface:
   display_name: "Landing Page Creator"
-  short_description: "Hero-first premium landing page production."
+  short_description: "Autonomous 10K-tier landing page production."
   brand_color: "#7C3AED"
-  default_prompt: "$landing-page-creator create a no-compromise sellable landing page using Creative Production Mode: 12 concept collisions, Hero Scene Contract, asset strategy before hero build, ImageGen when useful, premium motion, screenshots, and QA loops until every gate passes."
+  default_prompt: "$landing-page-creator Build a spectacular, client-specific responsive landing page with original assets and purposeful motion; reject generic rendered results, reconcept failed areas within the repair budget, and verify desktop/mobile evidence before claiming completion."
 policy:
   allow_implicit_invocation: true

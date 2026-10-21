@@ -1,498 +1,216 @@
 ---
 name: landing-page-creator
-description: Create premium landing pages, homepages, and hero sections with hero-first design, one memorable visual trick, client-specific art direction, scroll-story motion, ImageGen visuals, and anti-AI-slop gates. Use for Awwwards-level pages, 21st.dev-style components, cinematic heroes, B2C pages, SaaS/product pages, and conversion-focused redesigns.
+description: Create or redesign a premium, client-sellable landing page, homepage, or hero in autonomous 10K One-Shot mode. Use for Awwwards-level art direction, cinematic product storytelling, original ImageGen assets, GSAP/ScrollTrigger motion, signature interactions, conversion copy, and browser-based desktop/mobile visual QA. Not for dashboards, routine product UI, or tiny style fixes.
 ---
 
-# Landing Page Creator
+# Landing Page Creator — 10K One-Shot
 
 ## Mission
 
-Create landing pages with exceptional art direction, memorable hero sections, uncommon component composition, strong conversion logic, and production-ready frontend implementation.
+Produce a page that can credibly be presented as high-end agency work: unmistakably specific to the client, commercially clear, visually memorable, technically solid, responsive, and polished in a real browser.
 
-The goal is not a clean template. The goal is a custom, cinematic, brand-specific landing page that feels closer to high-end agency work than generic AI-generated UI.
+“10K” is the quality tier, not a price guarantee. Spectacle alone does not pass. The result must sell the offer, preserve trust, and survive desktop and mobile review.
 
-No Compromise Mode is the default for every landing page creation or redesign task. Do not wait for the user to ask for “insane” or “Awwwards-level”; assume the first version must be surprising, premium, and directly sellable.
+## Default Mode: One User Prompt, Full Production Run
 
-For every full landing page creation or redesign, always use Creative Production Mode: read `references/creative-production-mode.md` and work in passes instead of building the whole page in one shot.
+For any full landing-page creation or redesign, use **10K One-Shot mode** unless the user explicitly asks for collaboration, restraint, or a small targeted edit.
 
-## Non-Negotiable Rule
+In One-Shot mode:
 
-Do not start by coding.
+- make reasonable assumptions from the brief, repository, current site, brand assets, and market
+- do not pause for concept approval when the required context can be inferred safely
+- explore multiple directions internally, score them, select one, and continue automatically
+- do not dump internal concept lists, contracts, or checklists into the chat unless requested
+- create the assets, implement the page, run the app, inspect it, fix it, and verify it
+- surface a question only when a missing choice would materially alter the business, brand, or architecture and cannot be inferred
 
-Always follow this order:
+One-shot does not mean one implementation pass. It means one user handoff with several bounded internal production passes.
 
-1. Understand the business and conversion goal.
-2. Create multiple creative directions.
-3. Choose one strong visual metaphor.
-4. Define the one big visual trick people will remember.
-5. Invent or scout component patterns and references.
-6. Decide the hero asset strategy before implementation.
-7. Generate or request ImageGen visuals before building the hero when useful.
-8. Design and build the hero first.
-9. Preview the hero on desktop and mobile.
-10. Pass the mandatory gates before building the full page.
-11. Implement the selected direction.
-12. Preview and polish.
-13. Review against the mandatory gates and anti-slop checklist.
+## Reject Generic Work Before Calling It Finished
 
-If the user explicitly asks to code immediately, still do a very short creative direction pass first unless the task is a small targeted edit.
+Read `references/review-checklist.md` before implementation to establish the acceptance evidence, then apply it to the rendered hero and completed page. A successful build, expensive-looking effects, or a self-awarded score cannot establish visual quality.
 
-## Quality Bar
+For an ambitious full build, reject a transferable template, an anonymous hero, a missing signature moment, or a mobile composition that loses the idea. Record the visible failure and change its cause: concept, asset, composition, or choreography. Do not count a new gradient, reveal animation, or larger heading as a new concept.
 
-The result must feel:
+Use `references/fix-bad-output.md` to continue automatically through up to three substantial creative repair cycles across the task. Stop earlier only when the applicable gates pass with evidence. If the limit or a real blocker prevents acceptance, preserve the strongest working version and explicitly report the unmet quality gate; never relabel it as spectacular. This budget bounds creative rework, not required functional fixes. Respect explicit user budgets, references, conservative brands, and targeted scope.
 
-- custom
-- premium
-- memorable
-- conversion-focused
-- emotionally clear
-- visually coherent
-- technically clean
-- mobile-polished
-- non-generic
+## Load References Progressively
 
-Avoid:
+For every full build or redesign, read `references/creative-production-mode.md` first and follow it as the production runbook.
 
-- generic SaaS dashboard heroes
-- random gradient blobs
-- vague floating cards
-- decorative beam-and-card diagrams
-- large empty panels pretending to be premium UI
-- meaningless fake metrics
-- cheap glassmorphism
-- over-rounded cards
-- stacked template sections
-- random icons
-- lorem ipsum
-- AI-looking bento grids
-- decorative animation with no purpose
-- generic headlines like “Transform your business”
+Then load only what the current pass needs:
 
-## Mandatory Gates
+- concept selection: `references/concept-collision-engine.md`
+- art direction and signature-scene ideas: `references/high-impact-design-patterns.md`
+- hero composition: `references/hero-patterns.md`
+- custom component mutation: `references/component-bank.md`
+- generated visual assets or a full-page visual comp: `references/imagegen-prompts.md`
+- GSAP, ScrollTrigger, scroll storytelling, and performance: `references/motion-engineering.md`
+- generic-output detection: `references/anti-ai-slop.md`
+- repair after a failed visual review: `references/fix-bad-output.md`
+- final acceptance: `references/review-checklist.md`
 
-Treat these gates as hard blockers. If any gate fails, stop expanding the page and revise the concept, hero, component, copy, or interaction until it passes.
+## Context Modes
 
-### No Compromise Gate
+Choose the mode from the request; do not ask the user to name it.
 
-For full landing page creation or redesign, default to the most memorable feasible execution, not the safest clean layout. Prefer one extraordinary signature scene over a complete but average page.
+### Full creation
 
-Do not downgrade to a generic hero unless the user explicitly asks for a conservative/simple page or the task is only a small targeted edit.
+Own art direction, copy structure, assets, motion, implementation, and QA. Use the complete One-Shot pipeline.
 
-### One Big Trick Gate
+### Redesign in an existing repository
 
-Before coding, write the one-liner for the visual trick the client will remember.
+Preserve proven business behavior while replacing weak presentation. Before editing, inspect the stack, routes, content model, analytics, forms, SEO metadata, URLs, and current brand assets. Do not casually break or replace working integrations.
 
-Examples: “the phone repairs itself on scroll,” “the building turns into a living control map,” “the invoice chaos flows through a glass automation engine,” “the product assembles from exploded layers.”
+### Targeted hero or section
 
-If there is no one-liner, the concept is not strong enough.
+Apply the same quality bar only to the requested surface. Do not expand into a full-site redesign.
 
-### Freshness Gate
+### Conservative brand
 
-Do not reuse the examples in this skill as final concepts. Examples such as “device x-ray,” “repair lens,” “mission control,” “proof constellation,” “service orbit,” and “phone repairs itself on scroll” are inspiration seeds only.
+Lower visual density, not quality. Prefer editorial composition, tactile imagery, precise typography, and subtle motion over WebGL or spectacle that conflicts with the brand.
 
-For every new landing page, invent a fresh concept by combining one specific business truth, one buyer anxiety, one unexpected visual metaphor, one interaction mechanic, and one proof or conversion moment.
+## Internal Design Read
 
-Fail if the selected hero could be described using only an example already present in this skill. The final concept must include at least one surprising twist specific to this client.
+Before coding, form one compact internal sentence:
 
-### Hero Production Budget Gate
+> This page should make [buyer] feel [emotion] because [specific promise], proven by [evidence], inside a [visual world].
 
-Spend most of the creative effort on the first viewport and signature scene. Lower sections can be simpler; the hero cannot.
+Set three internal dials. Defaults for a “site de dingue” request:
 
-For full landing pages, allocate roughly 60-70% of design attention to hero composition, asset quality, motion, copy, CTA, and mobile hero polish before expanding the page.
+- `DESIGN_VARIANCE = 8/10` — original composition without sacrificing comprehension
+- `MOTION_INTENSITY = 8/10` — one cinematic sequence plus restrained support motion
+- `VISUAL_DENSITY = 4/10` — enough richness to feel authored, enough space to feel premium
 
-### Hero-First Build Gate
+Adapt these to the offer and brand. Never make the page harder to understand merely to maximize a dial.
 
-Build the hero before the rest of the page. Do not fill out generic sections to compensate for a weak first viewport.
+## Creative Director Autopilot
 
-Pass only after desktop and mobile hero preview. If the hero does not look client-ready, rebuild the hero before continuing.
+Before implementation:
 
-For full landing pages, use Hero Only First Mode when possible: implement only the hero first, preview desktop and mobile, verify the one big trick and CTA, then build lower sections. If the hero fails, delete or rebuild it before writing lower sections.
+1. Extract the real offer, audience, buyer anxiety, desired action, proof, and brand constraints.
+2. Generate raw concept collisions and three viable creative directions internally.
+3. Score the directions for business specificity, three-second clarity, visual originality, conversion strength, technical feasibility, asset feasibility, and mobile viability.
+4. Select the strongest feasible direction automatically. Prefer the boldest direction that still communicates clearly.
+5. State the memorable idea in one line: **the one big trick**.
+6. Define the hero scene, scroll story, asset plan, motion beats, proof placement, CTA path, and mobile adaptation.
+7. Start implementation without waiting for approval.
 
-### Hero Gate
+Reject a direction if it is primarily a layout, depends on generic cards or gradients, could serve another company, needs fabricated claims, or has no strong mobile translation.
 
-The hero must make the client feel they are seeing a custom, high-value demo.
+## The Sellable Page Contract
 
-Pass only if:
+Every full page must have all of the following:
 
-- the hero is the most impressive part of the page
-- the first viewport contains a custom visual scene, not a centered text block
-- the scene connects directly to the client’s business, product, service, or proof
-- the primary CTA is visible, specific, and commercially useful
-- the above-the-fold experience would still feel premium with the rest of the page hidden
+- a promise understood within roughly three seconds
+- a first viewport composed as a custom scene, not a centered template hero
+- one client-specific signature moment worth showing in a sales call
+- one continuous visual or argumentative scroll story
+- original or real visual assets strong enough for the concept
+- concrete proof and objection handling without invented metrics
+- a primary CTA that matches the buyer’s real next step
+- intentional desktop and mobile compositions
+- accessible semantics, visible focus, useful alt text, and reduced-motion behavior
+- no obvious console errors, horizontal overflow, broken interactions, or dead CTA paths
 
-Fail if it is only headline, subheadline, gradient, floating cards, fake metrics, and CTA.
+Fewer excellent sections beat a long page of filler. Lower sections may be calmer than the hero, but none may look unfinished in isolation.
 
-### Visual Ambition Gate
+## Hero and Signature Scene
 
-Choose an execution tier before coding:
+Invest most creative attention in the first viewport and the scene that continues from it.
 
-- **Premium static**: strong composition, real assets, refined typography.
-- **Cinematic interactive**: layered scene, cursor/scroll response, custom transitions.
-- **Awwwards-grade**: sticky scroll story, GSAP/ScrollTrigger or equivalent, WebGL/Three.js/Spline/Rive/canvas if the concept needs depth, physics, object motion, or product presence.
+The hero needs:
 
-Default to Cinematic interactive or Awwwards-grade for full landing page creation/redesign. Use Premium static only when it better fits the brand or the user explicitly wants restraint.
+- a sharp, specific headline and supporting line
+- a visible, commercially useful CTA
+- a real visual object, environment, image, typographic construction, or interactive system
+- depth through foreground, midground, and background when the direction is cinematic
+- proof or reassurance embedded near the decision, not hidden far below
+- a signature interaction whose purpose can be explained in one sentence
 
-### Anti-AI Gate
+Do not build lower sections to hide a weak hero. Build the hero first, inspect it at desktop and mobile sizes, repair it if necessary, then expand the story.
 
-Reject anything that looks like a generic AI landing page.
+## Assets: Comp-First When It Helps
 
-Fail immediately on this pattern:
+Use real client assets first when they are good enough. Use ImageGen when custom photography, renders, textures, environments, or metaphor assets would materially raise the result.
 
-- centered hero
-- blurred gradient background
-- three floating cards
-- features section
-- process section
-- testimonials section
-- final CTA
+When image generation is available and the page needs strong original imagery:
 
-Replace it with a client-specific scene, signature component, proof moment, and scroll/hover mechanic.
+1. Generate a wide visual direction comp or hero key art before detailed implementation.
+2. Use that comp as an art-direction reference, not as a screenshot pasted over the product.
+3. Generate isolated production assets with deliberate negative space and no embedded text.
+4. Implement typography, UI, interactions, and responsive behavior in code.
 
-### Component Reality Gate
+If image generation is unavailable, create the strongest feasible code-first system with real assets, typography, masks, SVG primitives, canvas, or 3D. Never substitute weak homemade illustration merely to say an asset exists.
 
-Every visible component must earn its space. Fail any section that is mostly an empty dark/glass panel, floating cards, abstract circles, beams, fake diagrams, or vague process boxes without a concrete client-specific visual, useful data, or meaningful interaction.
+## Motion and GSAP
 
-If a component cannot be explained as “this helps the buyer decide by showing [specific proof/process/outcome],” delete it or rebuild it around real content, real assets, or a stronger interaction.
+Motion must reveal, transform, explain, prove, or guide action. It is not decorative confetti.
 
-### Client-Specific Gate
+Use the project’s existing motion stack when adequate. For a concept built around precise scroll choreography, pinned scenes, scrubbed transformations, or object continuity, use GSAP with ScrollTrigger when the project can support it. Load `references/motion-engineering.md` before implementation.
 
-The page must feel impossible to reuse for a random business.
+Required behavior:
 
-Pass only if the hero, metaphor, copy, imagery, components, icons, proof, and CTA all name or imply the real client’s offer, market, and buyer anxiety. For a repair shop, show repair, diagnosis, devices, warranty, speed, trust, and local service. For another market, create equivalent domain-specific proof.
+- one dominant motion system, not competing effects everywhere
+- transforms and opacity for frequent animation where possible
+- cleanup on unmount and no duplicate triggers during development
+- specific mobile choreography, not a broken compressed desktop timeline
+- reduced-motion fallback that preserves the story and CTA
+- progressive enhancement: content remains understandable without animation
 
-### Scroll Story Gate
+Add WebGL, Three.js, canvas, Rive, Spline, or image sequences only when they create the signature selling moment and have a credible fallback.
 
-Do not build a stack of generic sections. Build a scroll story.
+## Content and Truth
 
-Pass only if scrolling changes the scene or argument in a meaningful way: broken to fixed, unknown to diagnosed, risk to trust, scattered to organized, before to after, hidden system to visible proof, or problem to outcome. At least one section must have a scroll-linked, sticky, progressive, reveal, compare, timeline, or transformation mechanic.
+Use real supplied content, repository content, or verified public information. Improve positioning and wording, but do not invent awards, clients, reviews, prices, guarantees, performance claims, or metrics.
 
-### Motion Library Gate
+If exact proof is missing, use honest qualitative copy and leave clearly localized placeholders only where the project convention supports them. A spectacular lie is not a sellable design.
 
-Use serious motion tools when they materially improve the result. If the chosen concept depends on scroll choreography, use GSAP ScrollTrigger, Framer Motion/Motion, CSS scroll timelines, or the project’s existing motion stack. If it depends on a spatial product, device, map, particle field, or 3D scene, use Three.js/WebGL/Spline/Rive/canvas or a high-quality CSS 3D simulation.
+## Implementation Discipline
 
-Do not add heavy libraries for decorative motion. Do add them when they create the signature selling moment. Respect reduced-motion settings.
+- adapt to the existing framework and conventions; do not force a new stack
+- inspect dependencies before adding packages
+- preserve existing links, analytics, forms, consent flows, SEO, and accessibility unless the task explicitly changes them
+- use tokens or variables for color, type, spacing, radii, depth, and motion
+- keep components editable and boundaries understandable
+- optimize generated assets and avoid needless payload
+- avoid fragile absolute positioning without responsive constraints
+- avoid animation that blocks navigation or delays the CTA
 
-### Signature Component Gate
+## Browser Proof Is Mandatory When Available
 
-Invent at least one custom component that could be shown in a sales call.
+Do not call a page premium without seeing it rendered.
 
-It must combine a client-specific metaphor, content function, interaction mechanic, and conversion purpose. Use `references/component-bank.md` for mutation seeds, then rename and reshape the component around this client.
+For a full build:
 
-### Asset Escalation Gate
+1. Run the real app and target route.
+2. Inspect at least one desktop viewport at `1440x900` or larger.
+3. Inspect a representative mobile viewport around `390x844`.
+4. Capture or inspect the hero and every major section, not only the full-page thumbnail.
+5. Check console errors, overflow, text wrapping, stacking, focus states, CTA paths, motion timing, and reduced motion.
+6. Apply `references/review-checklist.md`, recording pass, fail, or unverified with the relevant screenshots and interaction observations.
+7. If a gate fails, follow `references/fix-bad-output.md`: repair the cause, compare the same viewport and scene states, and repeat within the shared creative repair budget. Recheck affected interactions after each change.
 
-Do not accept weak homemade visuals. If the hero needs a product, object, place, person, cinematic background, texture, or premium metaphor asset, use ImageGen, real client assets, high-quality photography, WebGL/canvas, or a polished CSS/SVG system.
+### Browser choice and session cleanup
 
-Avoid rough hand-drawn SVGs, distorted device mockups, fake app screenshots, messy illustration, or random abstract shapes. SVG is acceptable only when it is clean, deliberate, and production-grade.
+- Use Playwright for repeatable scripted checks and screenshots; use the in-app Browser for interactive visual inspection and user-facing review.
+- On macOS, use the installed `/Applications/Google Chrome.app` with `chromium.launch({ channel: 'chrome', headless: true })` and fresh browser contexts. Use a temporary or dedicated test profile, never the user's personal profile, cookies, or signed-in sessions without explicit authorization.
+- Keep `PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1` for local checks. Do not download Chromium, its headless shell, or Chrome for Testing. If installed Chrome is unavailable, use the in-app Browser when suitable or report the verification limit. CI may install its own browsers.
+- Default automated checks to headless mode to avoid opening desktop windows. Use a visible test window only when the user requests it or a specific check requires it. Set the viewport before interacting with the page.
+- Reuse a suitable task-owned test session across checks. With the Playwright CLI wrapper, select Chrome explicitly and use a uniquely named, isolated session; close that specific session after QA, including after a failed check.
+- For scripts, place cleanup in `finally`: close owned contexts and ensure the launched browser is closed even if a check or context cleanup fails. Close task-created test windows and tabs when finished unless the user asked to keep them open; preserve the in-app preview intended for user review.
+- Never quit Chrome globally, use broad process-kill commands, or close unrelated sessions or user tabs. If cleanup fails, report the remaining task-owned session instead of silently leaving it behind.
 
-### 21st.dev Scouting Gate
+If browser proof is unavailable, state exactly what remains unverified.
 
-Before implementing, scout or invent at least 2-3 premium interaction patterns inspired by 21st.dev, Magic UI, Codrops, Awwwards, Figma community, or similar sources when network access is available. Use them as raw material, not copied templates.
+## Final Delivery
 
-If browsing is available, perform a short reference hunt before coding: one hero/art-direction reference, one component/microinteraction reference, and one scroll/motion reference.
+Lead with the outcome. Briefly report:
 
-### Sellable Demo Gate
+- the chosen creative idea and signature interaction
+- what was created or changed
+- the desktop/mobile and functional checks actually performed
+- any real limitation, placeholder, or unverified item
+- how to run or review the page
 
-Before final delivery, ask: “Could I show this demo to the client without apologizing for the hero, generic sections, weak mobile, or missing business specificity?”
-
-Pass only if the answer is yes after desktop and mobile preview. If not, iterate on the weakest gate first, usually the hero.
-
-### Screenshot Critic Gate
-
-After preview, judge the hero screenshot as an art director. If the first viewport does not feel surprising, specific, polished, and worth paying for, revise only the hero and signature scene before touching lower sections.
-
-### Section Screenshot Gate
-
-Capture or inspect each major section, not only the hero. Any section that looks sparse, unfinished, generic, low-effort, misaligned, oversized, or hard to sell must be rewritten before delivery.
-
-## Phase 1 — Business Reading
-
-Identify:
-
-- what the company sells
-- who the buyer is
-- what the buyer wants
-- what pain the buyer feels
-- what trust barriers exist
-- what action the page should drive
-- what the market expects visually
-- what the page must make the visitor feel within 3 seconds
-
-Write one sentence:
-
-> This landing page should make [target] feel [emotion] because [core promise].
-
-## Phase 2 — Creative Directions
-
-Create 5 radically different directions before implementation.
-
-Each direction must include:
-
-- concept name
-- emotional angle
-- visual metaphor
-- hero layout
-- signature component idea
-- motion idea
-- ImageGen asset idea
-- conversion logic
-- why this is not generic
-
-Then select the strongest direction and explain why.
-
-Do not choose the safest direction by default. Choose the one with the best balance of memorability, clarity, conversion, brand fit, and feasibility.
-
-Before selecting the final direction, read `references/concept-collision-engine.md` and generate 12 raw concept collisions. Use them to find a fresher hero idea than the obvious industry pattern.
-
-## Phase 3 — Visual Metaphor
-
-Every premium landing must be built around one clear metaphor. Read `references/high-impact-design-patterns.md` for examples.
-
-The metaphor must guide:
-
-- hero visual
-- section rhythm
-- component shapes
-- motion language
-- copywriting
-- CTA placement
-- image style
-
-If there is no metaphor, stop and create one.
-
-## Phase 4 — Component Invention Framework
-
-Do not only copy component libraries. Invent signature components by combining:
-
-1. **Metaphor** — what world does the visitor enter?
-2. **Content function** — what does this component explain or prove?
-3. **Interaction mechanic** — hover, scroll, drag, cursor, reveal, timeline, compare, focus, spotlight, orbit, x-ray, morph.
-4. **Visual primitive** — path, beam, glass panel, card, canvas, SVG, mask, parallax layer, device frame, timeline, grid, marquee, 3D tilt.
-5. **Conversion purpose** — clarity, trust, desire, proof, objection removal, CTA.
-
-A great component must pass this sentence:
-
-> This component helps the user understand [message] by making them interact with [metaphor].
-
-If it only looks cool but says nothing, remove it.
-
-## Phase 5 — Component Scouting
-
-Use 21st.dev/Magic UI-style components as raw material, not templates.
-
-Read `references/component-bank.md` when choosing component patterns.
-Read `references/high-impact-design-patterns.md` for Awwwards-grade hero, motion, ImageGen, GSAP, Three.js, and scroll-story ideas.
-Read `references/creative-production-mode.md` for full-site concept, section storyboard, asset plan, motion prototype, and QA workflow.
-
-Rules:
-
-- Do not copy component libraries blindly.
-- Compose components into a custom scene.
-- Every animation must support the metaphor.
-- Every component must increase clarity, trust, desire, proof, or conversion.
-- Prefer one unforgettable hero component over ten average components.
-
-## Phase 6 — Signature Hero Requirements
-
-The hero must be the page’s strongest section.
-
-It must include:
-
-- a sharp, specific headline
-- a precise subheadline
-- one primary CTA
-- one secondary CTA or reassurance
-- a memorable visual metaphor
-- premium typography
-- strong spacing
-- one signature interaction
-- clear above-the-fold conversion logic
-
-The visitor must understand the promise in less than 3 seconds.
-
-Read `references/hero-patterns.md` before selecting the final hero pattern.
-
-Before coding, output a Hero Scene Contract with: concept, one big trick, main visual object, visual world, composition, foreground, midground, background, motion states, scroll/cursor interaction, ImageGen/asset strategy, proof embedded in the scene, CTA placement, mobile adaptation, and why it cannot be reused for another client.
-
-Do not code the hero until this contract is specific.
-
-## Phase 7 — ImageGen Direction
-
-Use image generation when the page needs:
-
-- a cinematic hero background
-- product/service illustration
-- abstract brand visual
-- premium device scene
-- custom texture
-- atmospheric image
-- visual metaphor asset
-- before/after visual
-- icon style exploration
-- campaign imagery
-
-If an image generation tool is available, invoke it explicitly when useful. If `$imagegen` is available, use `$imagegen`. If not available, produce precise image prompts and tell the user where to place the generated assets.
-
-Decide the hero asset strategy before building the hero: ImageGen, real assets, CSS/SVG, canvas, 3D, or hybrid.
-
-Before generating, create 3 image prompt options.
-
-If the hero would otherwise rely on a weak fake SVG, generic cards, fake dashboards, or abstract gradients, escalate to ImageGen or a better visual system before implementation.
-
-Each ImageGen prompt must define:
-
-- subject
-- composition
-- lighting
-- material
-- mood
-- brand fit
-- camera angle
-- negative constraints
-- usage in the landing page
-
-ImageGen prompts must avoid:
-
-- generic stock photo look
-- fake smiling corporate people
-- unreadable text inside images
-- random tech holograms
-- cliché AI gradients
-- messy details
-- irrelevant objects
-
-## Phase 8 — Landing Structure
-
-Use strong rhythm: hero, pain, transformation, offer, proof, process, differentiation, objections, and final CTA. Change, merge, or delete these beats whenever the concept needs a stronger story.
-
-Do not use generic section labels unless the section itself is distinctive.
-
-Before coding, define an art direction system: typography mood, color logic, material language, shape language, depth/shadow logic, motion language, texture/image style, CTA style, and mobile art direction. Every visual choice must support the selected metaphor.
-
-## Phase 9 — Copywriting Rules
-
-Copy must be:
-
-- specific
-- concrete
-- direct
-- emotionally sharp
-- conversion-focused
-- adapted to the market
-
-Avoid:
-
-- “we are passionate”
-- “tailored solutions”
-- “innovative services”
-- “your trusted partner”
-- “transform your business”
-- “seamless experience”
-- “unlock your potential”
-
-Every headline must either:
-
-- name a pain
-- promise an outcome
-- create curiosity
-- prove credibility
-- reduce friction
-- push action
-
-## Phase 10 — Implementation Rules
-
-Build with the existing project stack and conventions.
-
-Code must be:
-
-- componentized
-- responsive
-- accessible
-- performant
-- easy to edit
-- visually polished
-- production-ready
-
-Use dependencies only if justified.
-
-Prefer:
-
-- clean reusable components
-- CSS variables or design tokens
-- strong layout primitives
-- accessible buttons and links
-- reduced-motion support
-- mobile-first polish
-- browser preview verification
-
-For ambitious scroll or 3D concepts, justify the motion stack explicitly. Use GSAP/ScrollTrigger, Three.js/WebGL, Framer Motion/Motion, canvas, Spline, or Rive when the concept needs them and the project can support them.
-
-When working in React, Nuxt, Vue, or plain HTML/CSS, adapt the implementation to the existing structure. Do not force a new stack.
-
-## Phase 11 — Browser Polish Loop
-
-After implementation:
-
-1. Run the app.
-2. Open the page in a desktop-sized viewport.
-3. Inspect the hero first.
-4. Inspect mobile.
-5. Run the Hero-First, Hero, Visual Ambition, Anti-AI, Client-Specific, Scroll Story, Motion Library, Signature Component, Component Reality, Asset Escalation, 21st.dev, Sellable Demo, Screenshot Critic, and Section Screenshot gates.
-6. Fix spacing, typography, contrast, overflow, motion issues, and weak states.
-7. Remove anything that looks generic.
-8. For full builds, run at least two screenshot critique loops before delivery.
-
-If any screenshot critique loop fails, read `references/fix-bad-output.md` before editing.
-
-Do not claim the design is premium without looking at it if a browser/preview is available.
-
-## Phase 12 — Review Checklist
-
-The page fails if:
-
-- the hero could fit any random company
-- the visual metaphor is unclear
-- the layout looks like a template
-- the page is just stacked sections
-- a section is an empty decorative panel with floating boxes
-- the animations are decorative but pointless
-- the copy is generic
-- the mobile version feels secondary
-- the CTA is weak
-- the page lacks trust
-- the design looks AI-generated
-
-The page passes only if:
-
-- the hero is memorable
-- the metaphor is visible
-- the offer is clear
-- the design feels custom
-- the interactions are polished
-- the page is conversion-focused
-- the code is clean
-- the mobile result is strong
-- the visual identity fits the brand
-
-## Default User Flow
-
-When the user says something like:
-
-“Use this skill and create a landing page for [company].”
-
-Do this:
-
-1. Inspect the existing project if available.
-2. Read the existing website if a URL is provided and browser/network access is available.
-3. Produce 5 creative directions.
-4. Read `references/concept-collision-engine.md`, generate 12 raw concept collisions, and use them to avoid the obvious industry pattern.
-5. Pick the strongest concept.
-6. Read relevant references for hero, components, ImageGen, high-impact design, and creative production.
-7. Define the one big trick, art direction system, Hero Scene Contract, section storyboard, asset plan, signature scene, motion stack, hero budget, and scroll story before coding.
-8. Decide the hero asset strategy: ImageGen, real assets, CSS/SVG, canvas, 3D, or hybrid.
-9. Do a short reference hunt if browsing is available.
-10. If the hero would be stronger with ImageGen, create 3 prompt options and invoke ImageGen before implementation.
-11. Build and preview only the hero first when possible.
-12. Check the gates on the hero and revise if needed.
-13. Implement the full page.
-14. Preview the full page and improve any gate failure, starting with the hero.
-15. Summarize what changed and how to review it.
+Do not expose long internal deliberation. Do not claim Awwwards quality, production readiness, or a monetary value as a fact; show the concrete evidence that supports the quality tier.

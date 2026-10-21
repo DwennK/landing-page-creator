@@ -4,14 +4,12 @@ When I ask for a landing page, homepage, hero section, premium redesign, Awwward
 
 For these tasks:
 
-- do not code immediately
-- first create multiple creative directions
-- generate 12 concept collisions before choosing the final idea
-- write a Hero Scene Contract before coding the hero
-- pick one visual metaphor
-- use 21st.dev/Magic UI-style components as inspiration, not templates
-- mutate custom signature components around the business instead of reusing named examples
-- decide the hero asset strategy and use ImageGen before coding when custom visuals would improve the page
-- avoid generic AI-looking layouts
-- build and preview only the hero first when possible
-- prioritize a memorable hero, fresh concept, conversion, and production-quality frontend code
+- use 10K One-Shot mode by default: make reasonable assumptions and continue without concept-approval pauses
+- run multiple internal concept passes, score three directions, and choose the strongest feasible one automatically
+- build around one client-specific metaphor, one big visual trick, and one continuous sales story
+- use ImageGen comp-first when original assets materially improve the direction
+- use GSAP/ScrollTrigger or a lighter existing motion stack when motion reveals, transforms, proves, or sells
+- preserve real content, claims, links, forms, analytics, SEO, and accessibility in redesigns
+- build and inspect the hero first, then finish only sections that advance the argument
+- verify the rendered page with Playwright or the in-app Browser at desktop and mobile sizes; on macOS use installed Chrome headlessly with an isolated test profile, no browser download, and cleanup of task-owned sessions
+- run the evidence-based acceptance gate and reconcept generic or weak areas within the shared three-cycle creative repair budget; report any failed or unverified gate honestly
